@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Agencia especializada en Generación de Leads para empresas metalmecánicas: puertas metálicas, herrajes, estructuras, aberturas, portones, etc. Campañas de interacción en Instagram y Whatsapp que generan consultas reales.">
-    <meta name="keywords" content="marketing industrial, leads metalmecánica, Meta Ads, generación demanda B2B / B2C, consultas a Instagram y whatsapp">
+    <meta name="keywords" content="marketing industrial, leads metalmecánica, Meta Ads, generación demanda B2B, consultas whatsapp">
     <meta name="author" content="Metal Marketing">
     
     <!-- Open Graph -->
@@ -161,7 +161,7 @@
         }
         
         .logo img {
-            height: 40px;
+            height: 80px; /* Duplicado de 40px a 80px */
             width: auto;
         }
         
@@ -249,6 +249,72 @@
         }
         
         /* =========================
+           INFINITE CAROUSEL
+           ========================= */
+        .carousel-container {
+            margin-top: 2rem;
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .carousel-wrapper {
+            display: flex;
+            animation: scroll 12s linear infinite; /* 3 segundos por imagen x 4 = 12s */
+        }
+        
+        .carousel-slide {
+            flex: 0 0 250px;
+            height: 120px;
+            margin: 0 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: white;
+            border-radius: 8px;
+            padding: 1rem;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+        
+        .carousel-slide img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+            filter: grayscale(20%);
+            transition: filter 0.3s ease;
+        }
+        
+        .carousel-slide:hover img {
+            filter: grayscale(0%);
+        }
+        
+        @keyframes scroll {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(calc(-250px * 4 - 4rem)); /* ancho slide * cantidad + margins */
+            }
+        }
+        
+        /* Carousel para mobile */
+        @media (max-width: 768px) {
+            .carousel-slide {
+                flex: 0 0 180px;
+                height: 90px;
+            }
+            
+            @keyframes scroll {
+                0% {
+                    transform: translateX(0);
+                }
+                100% {
+                    transform: translateX(calc(-180px * 4 - 4rem));
+                }
+            }
+        }
+        
+        /* =========================
            HERO SECTION
            ========================= */
         .hero {
@@ -298,6 +364,10 @@
         
         .hero h1 {
             margin-bottom: 1.5rem;
+        }
+        
+        .hero h1 .highlight {
+            color: var(--tech-cyan);
         }
         
         .hero-description {
@@ -362,23 +432,12 @@
         }
         
         .clients-badge p {
-            font-size: 0.875rem;
-            color: var(--technical-gray);
-            margin-bottom: 1rem;
-        }
-        
-        .clients-logos {
-            display: flex;
-            gap: 2rem;
-            align-items: center;
-            flex-wrap: wrap;
-        }
-        
-        .client-logo {
-            font-family: var(--font-subheading);
+            font-size: 2rem; /* Duplicado de 0.875rem a 2rem */
+            color: var(--brand-primary);
             font-weight: 600;
-            color: var(--dark-steel);
-            font-size: 1.125rem;
+            margin-bottom: 1.5rem;
+            text-align: center;
+            font-family: var(--font-subheading);
         }
         
         /* =========================
@@ -545,23 +604,71 @@
             font-size: 1.125rem;
         }
         
-        .results-clients {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 3rem;
-            flex-wrap: wrap;
+        .results-carousel {
             margin-top: 3rem;
             padding-top: 3rem;
             border-top: 1px solid rgba(255, 255, 255, 0.1);
         }
         
-        .result-client {
-            font-family: var(--font-subheading);
-            font-weight: 600;
+        .results-carousel p {
+            font-size: 2rem;
             color: white;
-            font-size: 1.25rem;
-            opacity: 0.8;
+            font-weight: 600;
+            margin-bottom: 2rem;
+            font-family: var(--font-subheading);
+        }
+        
+        .results-carousel .carousel-wrapper {
+            animation: scrollResults 15s linear infinite; /* 3 segundos x 5 imágenes */
+        }
+        
+        .results-carousel .carousel-slide {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .placeholder-slide {
+            background: rgba(59, 180, 196, 0.1) !important;
+            border: 2px dashed var(--tech-cyan) !important;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 1.5rem !important;
+        }
+        
+        .placeholder-slide .placeholder-text {
+            font-family: var(--font-heading);
+            font-size: 1.5rem;
+            color: var(--tech-cyan);
+            margin-bottom: 0.5rem;
+            text-align: center;
+        }
+        
+        .placeholder-slide .placeholder-subtext {
+            font-size: 0.875rem;
+            color: var(--steel-light);
+            text-align: center;
+        }
+        
+        @keyframes scrollResults {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(calc(-250px * 5 - 5rem));
+            }
+        }
+        
+        @media (max-width: 768px) {
+            @keyframes scrollResults {
+                0% {
+                    transform: translateX(0);
+                }
+                100% {
+                    transform: translateX(calc(-180px * 5 - 5rem));
+                }
+            }
         }
         
         /* =========================
@@ -881,6 +988,10 @@
             .pricing-card.recommended {
                 transform: scale(1);
             }
+            
+            .logo img {
+                height: 60px; /* Ajuste para mobile */
+            }
         }
         
         @media (max-width: 640px) {
@@ -907,6 +1018,14 @@
                 bottom: 20px;
                 right: 20px;
             }
+            
+            .clients-badge p {
+                font-size: 1.5rem;
+            }
+            
+            .results-carousel p {
+                font-size: 1.5rem;
+            }
         }
         
         /* =========================
@@ -930,7 +1049,7 @@
         <div class="container">
             <nav class="nav">
                 <a href="#" class="logo">
-                    <img src="./assets/images/logo-metal-marketing.png" alt="Metal Marketing Logo">
+                    <img src="./assets/images/metal-marketing-logo.png" alt="Metal Marketing Logo">
                 </a>
                 <button class="menu-toggle" id="menuToggle">
                     <span></span>
@@ -941,7 +1060,7 @@
                     <li><a href="#servicios">Servicios</a></li>
                     <li><a href="#proceso">Proceso</a></li>
                     <li><a href="#resultados">Resultados</a></li>
-                    <li><a href="#precios">Precios</a></li>
+                    <li><a href="#planes">Planes</a></li>
                     <li><a href="#contacto">Contacto</a></li>
                 </ul>
             </nav>
@@ -953,7 +1072,7 @@
         <div class="hero-content">
             <div class="hero-text">
                 <span class="badge">Especialistas en metalmecánica · B2B</span>
-                <h1>Generamos consultas reales y efectivas para tu empresa metalmecánica</h1>
+                <h1>Generamos <span class="highlight">consultas reales y efectivas</span> para tu empresa metalmecánica</h1>
                 <p class="hero-description">
                     Campañas de interacción en Instagram y WhatsApp para fabricantes de puertas metálicas, herrajes, estructuras, aberturas y todo lo relacionado a la industria Metal Mecánica. <strong>Prueba de 7 días</strong> para ver resultados antes de invertir.
                 </p>
@@ -961,7 +1080,7 @@
                 <div class="hero-stats">
                     <div class="stat-item">
                         <span class="stat-value">$1.500-$2.500</span>
-                        <span class="stat-label">Costo por consulta (ARS)</span>
+                        <span class="stat-label">Costo por Lead (ARS)</span>
                     </div>
                     <div class="stat-item">
                         <span class="stat-value">48 hs</span>
@@ -979,20 +1098,46 @@
                 
                 <div class="hero-cta">
                     <a href="#contacto" class="btn btn-primary">Quiero la prueba de 7 días</a>
-                    <a href="#contacto" class="btn btn-secondary">Agendar videollamada</a>
+                    <a href="https://calendly.com/metalmarketingagencia/30min" class="btn btn-secondary" target="_blank">Agendar videollamada</a>
                 </div>
                 
                 <div class="clients-badge">
                     <p>Trabajamos con:</p>
-                    <div class="clients-logos">
-                        <span class="client-logo">Lealum SA</span>
-                        <span class="client-logo">ACC Herrajes</span>
+                    <div class="carousel-container">
+                        <div class="carousel-wrapper">
+                            <!-- Primera serie de slides -->
+                            <div class="carousel-slide">
+                                <img src="./assets/images/cliente-1.png" alt="Cliente 1">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="./assets/images/cliente-2.png" alt="Cliente 2">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="./assets/images/cliente-3.png" alt="Cliente 3">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="./assets/images/cliente-4.png" alt="Cliente 4">
+                            </div>
+                            
+                            <!-- Duplicado para loop infinito -->
+                            <div class="carousel-slide">
+                                <img src="./assets/images/cliente-1.png" alt="Cliente 1">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="./assets/images/cliente-2.png" alt="Cliente 2">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="./assets/images/cliente-3.png" alt="Cliente 3">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="./assets/images/cliente-4.png" alt="Cliente 4">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
             
             <div class="hero-visual">
-                <!-- Aquí puedes colocar un mockup de dashboard o imagen ilustrativa -->
                 <img src="./assets/images/dashboard-preview.png" alt="Panel de métricas de campaña" loading="lazy">
             </div>
         </div>
@@ -1105,16 +1250,53 @@
                 </div>
             </div>
             
-            <div class="results-clients">
-                <span class="result-client">Lealum SA</span>
-                <span class="result-client">ACC Herrajes</span>
-                <span class="result-client">Tu Empresa aquí</span>
+            <div class="results-carousel">
+                <p>Clientes que confían en nosotros</p>
+                <div class="carousel-container">
+                    <div class="carousel-wrapper">
+                        <!-- Primera serie de slides -->
+                        <div class="carousel-slide">
+                            <img src="./assets/images/cliente-1.png" alt="Cliente 1">
+                        </div>
+                        <div class="carousel-slide placeholder-slide">
+                            <span class="placeholder-text">Tu empresa aquí</span>
+                            <span class="placeholder-subtext">¿Listo para crecer?</span>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="./assets/images/cliente-2.png" alt="Cliente 2">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="./assets/images/cliente-3.png" alt="Cliente 3">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="./assets/images/cliente-4.png" alt="Cliente 4">
+                        </div>
+                        
+                        <!-- Duplicado para loop infinito -->
+                        <div class="carousel-slide">
+                            <img src="./assets/images/cliente-1.png" alt="Cliente 1">
+                        </div>
+                        <div class="carousel-slide placeholder-slide">
+                            <span class="placeholder-text">Tu empresa aquí</span>
+                            <span class="placeholder-subtext">¿Listo para crecer?</span>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="./assets/images/cliente-2.png" alt="Cliente 2">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="./assets/images/cliente-3.png" alt="Cliente 3">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="./assets/images/cliente-4.png" alt="Cliente 4">
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- PRECIOS -->
-    <section id="precios" class="section pricing">
+    <!-- PLANES -->
+    <section id="planes" class="section pricing">
         <div class="container">
             <div class="section-title">
                 <h2 class="fade-in">Planes</h2>
@@ -1132,7 +1314,7 @@
                         <li>Reporte quincenal</li>
                     </ul>
                     <div class="plan-cta">
-                        <a href="#contacto" class="btn btn-secondary" style="width: 100%;">Quiero este</a>
+                        <a href="https://calendly.com/metalmarketingagencia/30min" class="btn btn-secondary" style="width: 100%;" target="_blank">Quiero este</a>
                     </div>
                 </div>
                 
@@ -1149,7 +1331,7 @@
                         <li>Landing page de captura de datos</li>
                     </ul>
                     <div class="plan-cta">
-                        <a href="#contacto" class="btn btn-primary" style="width: 100%;">Elegir este</a>
+                        <a href="https://calendly.com/metalmarketingagencia/30min" class="btn btn-primary" style="width: 100%;" target="_blank">Elegir este</a>
                     </div>
                 </div>
                 
@@ -1166,7 +1348,7 @@
                         <li>Creación de Página web y landing page</li>
                     </ul>
                     <div class="plan-cta">
-                        <a href="#contacto" class="btn btn-accent" style="width: 100%;">Hablemos</a>
+                        <a href="https://calendly.com/metalmarketingagencia/30min" class="btn btn-accent" style="width: 100%;" target="_blank">Hablemos</a>
                     </div>
                 </div>
             </div>
@@ -1344,6 +1526,7 @@
     </script>
 </body>
 </html>
+
 
         
 
