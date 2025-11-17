@@ -1,340 +1,1346 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Metal Marketing · Generación de Clientes para la Industria Metalmecánica</title>
-  <meta name="description" content="Agencia especializada en lead gen para empresas metalmecánicas: puertas metálicas, herrajes, estructuras, aberturas y portones. Campañas de interacción y WhatsApp que generan consultas reales." />
-  <link rel="canonical" href="https://www.tudominio.com/" />
-  <meta name="theme-color" content="#0b172a" />
-  <!-- Open Graph -->
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Metal Marketing · Leads reales para metalmecánicas" />
-  <meta property="og:description" content="Campañas de interacción y WhatsApp que generan consultas reales. Prueba de 7 días." />
-  <meta property="og:url" content="https://www.tudominio.com/" />
-  <meta property="og:image" content="https://www.tudominio.com/og-image.jpg" />
-  <!-- Favicon (opcional) -->
-  <link rel="icon" href="/favicon.ico" />
-  
-  <!-- Tipografías seguras del sistema -->
-  <style>
-    :root{
-      --bg:#0b1220;          /* azul muy oscuro */
-      --ink:#e6eef8;         /* texto claro */
-      --muted:#94a3b8;       /* gris azulado */
-      --brand:#3b82f6;       /* azul */
-      --brand-2:#22d3ee;     /* cian */
-      --card:#0f172a;        /* pizarra */
-      --ok:#22c55e;
-      --warn:#f59e0b;
-      --bad:#ef4444;
-      --radius:16px;
-      --shadow:0 10px 30px rgba(0,0,0,.25);
-    }
-    *{box-sizing:border-box}
-    html{scroll-behavior:smooth}
-    body{margin:0;font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";background:linear-gradient(180deg,#0b1220 0%,#0b1220 40%,#0a0f1b 100%);color:var(--ink)}
-    a{color:inherit}
-    .container{max-width:1100px;margin:0 auto;padding:0 20px}
-    header{position:sticky;top:0;background:rgba(11,18,32,.7);backdrop-filter: saturate(140%) blur(10px);border-bottom:1px solid rgba(255,255,255,.08);z-index:50}
-    .nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
-    .logo{display:flex;gap:10px;align-items:center;font-weight:700;letter-spacing:.2px}
-    .logo-badge{width:34px;height:34px;border-radius:10px;background:radial-gradient(75% 75% at 30% 30%,var(--brand-2),var(--brand));display:grid;place-items:center;box-shadow:var(--shadow)}
-    .logo-badge svg{filter:drop-shadow(0 3px 10px rgba(34,211,238,.4))}
-    .nav a{opacity:.9;text-decoration:none;margin-left:18px}
-    .btn{display:inline-flex;gap:10px;align-items:center;border:1px solid rgba(255,255,255,.14);padding:12px 16px;border-radius:999px;background:linear-gradient(180deg,rgba(255,255,255,.06),rgba(255,255,255,.03));transition:.2s;box-shadow:0 4px 18px rgba(59,130,246,.18) inset}
-    .btn:hover{transform:translateY(-1px);border-color:rgba(255,255,255,.24)}
-    .btn.primary{background:linear-gradient(180deg,var(--brand),#2563eb);border-color:transparent}
-    .btn.primary:hover{filter:brightness(1.05)}
-    .hero{padding:84px 0 52px}
-    .hero .grid{display:grid;grid-template-columns:1.1fr .9fr;gap:30px}
-    .badge{display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(255,255,255,.12);padding:8px 12px;border-radius:999px;color:var(--muted);font-size:14px}
-    h1{font-size:48px;line-height:1.06;margin:14px 0 14px;letter-spacing:.2px}
-    h1 .grad{background:linear-gradient(90deg,var(--brand),var(--brand-2));-webkit-background-clip:text;background-clip:text;color:transparent}
-    .lead{color:#cbd5e1;font-size:18px;max-width:680px}
-    .stats{display:flex;gap:18px;flex-wrap:wrap;margin:22px 0 0}
-    .stat{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);padding:16px 18px;border-radius:12px}
-    .card{background:linear-gradient(180deg,rgba(255,255,255,.04),rgba(255,255,255,.02));border:1px solid rgba(255,255,255,.08);border-radius:var(--radius);box-shadow:var(--shadow)}
-    .hero-visual{padding:20px;background:radial-gradient(60% 60% at 50% 0%,rgba(34,211,238,.12),rgba(59,130,246,.05));border:1px solid rgba(255,255,255,.06);border-radius:var(--radius)}
-    section{padding:64px 0}
-    h2{font-size:34px;margin:0 0 12px}
-    .muted{color:var(--muted)}
-    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-    .service{padding:22px}
-    .service h3{margin:8px 0 8px}
-    .process{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
-    .step{padding:18px}
-    .kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-    .kpi{padding:18px;text-align:center}
-    .logos{display:flex;gap:28px;flex-wrap:wrap;align-items:center}
-    .logos .logo-item{opacity:.8;filter:grayscale(100%);border:1px dashed rgba(255,255,255,.08);padding:12px 16px;border-radius:12px}
-    .pricing{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-    .price-card{padding:22px;position:relative}
-    .pill{position:absolute;right:14px;top:14px;background:rgba(34,197,94,.15);color:#bbf7d0;border:1px solid rgba(34,197,94,.3);padding:6px 10px;border-radius:999px;font-size:12px}
-    .faq{display:grid;grid-template-columns:1fr 1fr;gap:16px}
-    footer{border-top:1px solid rgba(255,255,255,.08);padding:40px 0;color:var(--muted)}
-    .whatsapp{position:fixed;right:18px;bottom:18px;z-index:60}
-    .whatsapp a{display:inline-flex;align-items:center;gap:10px;background:#25D366;color:#083b17;padding:12px 16px;border-radius:999px;text-decoration:none;font-weight:700;box-shadow:0 6px 30px rgba(37,211,102,.35)}
-    .small{font-size:14px}
-    @media (max-width:980px){
-      .hero .grid{grid-template-columns:1fr}
-      .grid-3,.process,.kpis,.pricing,.faq{grid-template-columns:1fr}
-      h1{font-size:38px}
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Agencia especializada en Generación de Leads para empresas metalmecánicas: puertas metálicas, herrajes, estructuras, aberturas, portones, etc. Campañas de interacción en Instagram y Whatsapp que generan consultas reales.">
+    <meta name="keywords" content="marketing industrial, leads metalmecánica, Meta Ads, generación demanda B2B, consultas whatsapp">
+    <meta name="author" content="Metal Marketing">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Metal Marketing · Leads reales para metalmecánicas">
+    <meta property="og:description" content="Generamos consultas reales y efectivas para empresas metalmecánicas. Prueba de 7 días sin compromiso.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="./assets/images/og-image.jpg">
+    
+    <title>Metal Marketing · Generación de Clientes para la Industria Metalmecánica</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Montserrat:wght@400;600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    
+    <style>
+        /* =========================
+           CSS VARIABLES - BRANDING
+           ========================= */
+        :root {
+            /* Colores Primarios */
+            --brand-primary: #1F3A5F;
+            --steel-light: #D9DCE1;
+            
+            /* Colores Secundarios */
+            --dark-steel: #2A3038;
+            --industrial-black: #0B0E14;
+            
+            /* Colores Destacados */
+            --tech-cyan: #3BB4C4;
+            --technical-gray: #A1A7B3;
+            
+            /* Tipografías */
+            --font-heading: 'Oswald', sans-serif;
+            --font-subheading: 'Montserrat', sans-serif;
+            --font-body: 'Inter', sans-serif;
+            
+            /* Espaciado */
+            --section-padding: 5rem 1.5rem;
+            --container-max: 1200px;
+        }
+        
+        /* =========================
+           RESET & BASE
+           ========================= */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
+        
+        body {
+            font-family: var(--font-body);
+            color: var(--dark-steel);
+            line-height: 1.7;
+            background: #ffffff;
+            overflow-x: hidden;
+        }
+        
+        /* =========================
+           TIPOGRAFÍA
+           ========================= */
+        h1, h2 {
+            font-family: var(--font-heading);
+            font-weight: 700;
+            letter-spacing: -0.01em;
+            line-height: 1.2;
+        }
+        
+        h1 {
+            font-size: clamp(2.5rem, 5vw, 3.75rem);
+            color: var(--brand-primary);
+        }
+        
+        h2 {
+            font-size: clamp(2rem, 4vw, 2.5rem);
+            color: var(--brand-primary);
+            margin-bottom: 1rem;
+        }
+        
+        h3 {
+            font-family: var(--font-subheading);
+            font-weight: 600;
+            font-size: clamp(1.25rem, 2.5vw, 1.5rem);
+            color: var(--brand-primary);
+            margin-bottom: 0.75rem;
+        }
+        
+        p {
+            font-size: 1.125rem;
+            color: var(--dark-steel);
+            margin-bottom: 1rem;
+        }
+        
+        /* =========================
+           LAYOUT UTILITIES
+           ========================= */
+        .container {
+            max-width: var(--container-max);
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+        
+        .section {
+            padding: var(--section-padding);
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .section-subtitle {
+            font-size: 1.25rem;
+            color: var(--technical-gray);
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto 3rem;
+        }
+        
+        /* =========================
+           HEADER & NAVIGATION
+           ========================= */
+        .header {
+            position: sticky;
+            top: 0;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            padding: 1rem 0;
+        }
+        
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-family: var(--font-heading);
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--brand-primary);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .logo img {
+            height: 40px;
+            width: auto;
+        }
+        
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+        
+        .nav-menu a {
+            font-family: var(--font-subheading);
+            font-weight: 600;
+            color: var(--dark-steel);
+            text-decoration: none;
+            transition: color 0.3s ease;
+            font-size: 0.95rem;
+        }
+        
+        .nav-menu a:hover {
+            color: var(--brand-primary);
+        }
+        
+        .menu-toggle {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .menu-toggle span {
+            width: 25px;
+            height: 3px;
+            background: var(--brand-primary);
+            transition: all 0.3s ease;
+        }
+        
+        /* =========================
+           BUTTONS
+           ========================= */
+        .btn {
+            display: inline-block;
+            padding: 0.875rem 2rem;
+            font-family: var(--font-subheading);
+            font-weight: 600;
+            font-size: 1rem;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            border: 2px solid transparent;
+            text-align: center;
+        }
+        
+        .btn-primary {
+            background: var(--brand-primary);
+            color: white;
+        }
+        
+        .btn-primary:hover {
+            background: #163050;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(31, 58, 95, 0.3);
+        }
+        
+        .btn-secondary {
+            background: transparent;
+            color: var(--brand-primary);
+            border-color: var(--brand-primary);
+        }
+        
+        .btn-secondary:hover {
+            background: var(--brand-primary);
+            color: white;
+        }
+        
+        .btn-accent {
+            background: var(--tech-cyan);
+            color: white;
+        }
+        
+        .btn-accent:hover {
+            background: #2a9aa8;
+        }
+        
+        /* =========================
+           HERO SECTION
+           ========================= */
+        .hero {
+            background: linear-gradient(135deg, var(--steel-light) 0%, #ffffff 100%);
+            padding: 6rem 1.5rem 5rem;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: -10%;
+            width: 40%;
+            height: 100%;
+            background: var(--brand-primary);
+            opacity: 0.03;
+            transform: skewX(-15deg);
+        }
+        
+        .hero-content {
+            max-width: var(--container-max);
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+        
+        .hero-text {
+            z-index: 1;
+        }
+        
+        .badge {
+            display: inline-block;
+            background: var(--brand-primary);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 30px;
+            font-family: var(--font-subheading);
+            font-size: 0.875rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            letter-spacing: 0.5px;
+        }
+        
+        .hero h1 {
+            margin-bottom: 1.5rem;
+        }
+        
+        .hero-description {
+            font-size: 1.25rem;
+            color: var(--dark-steel);
+            margin-bottom: 2rem;
+            line-height: 1.7;
+        }
+        
+        .hero-stats {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+            margin: 2.5rem 0;
+        }
+        
+        .stat-item {
+            background: white;
+            padding: 1.25rem;
+            border-radius: 8px;
+            border-left: 4px solid var(--tech-cyan);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+        
+        .stat-value {
+            font-family: var(--font-heading);
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--brand-primary);
+            display: block;
+        }
+        
+        .stat-label {
+            font-size: 0.875rem;
+            color: var(--technical-gray);
+            margin-top: 0.25rem;
+        }
+        
+        .hero-cta {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+        
+        .hero-visual {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+        }
+        
+        .hero-visual img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        
+        .clients-badge {
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid var(--steel-light);
+        }
+        
+        .clients-badge p {
+            font-size: 0.875rem;
+            color: var(--technical-gray);
+            margin-bottom: 1rem;
+        }
+        
+        .clients-logos {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        .client-logo {
+            font-family: var(--font-subheading);
+            font-weight: 600;
+            color: var(--dark-steel);
+            font-size: 1.125rem;
+        }
+        
+        /* =========================
+           SERVICES SECTION
+           ========================= */
+        .services {
+            background: white;
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+        }
+        
+        .service-card {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 10px;
+            border: 2px solid var(--steel-light);
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(90deg, var(--brand-primary), var(--tech-cyan));
+            border-radius: 10px 10px 0 0;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(31, 58, 95, 0.15);
+            border-color: var(--brand-primary);
+        }
+        
+        .service-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .service-card h3 {
+            margin-bottom: 1rem;
+        }
+        
+        .service-card p {
+            color: var(--dark-steel);
+            margin-bottom: 1.5rem;
+        }
+        
+        .service-features {
+            list-style: none;
+        }
+        
+        .service-features li {
+            padding: 0.5rem 0;
+            padding-left: 1.75rem;
+            position: relative;
+            color: var(--dark-steel);
+            font-size: 0.95rem;
+        }
+        
+        .service-features li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--tech-cyan);
+            font-weight: bold;
+            font-size: 1.25rem;
+        }
+        
+        /* =========================
+           PROCESS SECTION
+           ========================= */
+        .process {
+            background: var(--steel-light);
+        }
+        
+        .process-steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            position: relative;
+        }
+        
+        .process-step {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            text-align: center;
+            position: relative;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+        }
+        
+        .step-number {
+            width: 60px;
+            height: 60px;
+            background: var(--brand-primary);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: var(--font-heading);
+            font-size: 1.75rem;
+            font-weight: 700;
+            margin: 0 auto 1.5rem;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .process-step h3 {
+            margin-bottom: 1rem;
+        }
+        
+        .process-step p {
+            color: var(--dark-steel);
+            font-size: 1rem;
+        }
+        
+        /* =========================
+           RESULTS SECTION
+           ========================= */
+        .results {
+            background: var(--industrial-black);
+            color: white;
+            text-align: center;
+        }
+        
+        .results h2 {
+            color: white;
+        }
+        
+        .results-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+        
+        .result-stat {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 2.5rem 2rem;
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .result-value {
+            font-family: var(--font-heading);
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--tech-cyan);
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        
+        .result-label {
+            color: var(--steel-light);
+            font-size: 1.125rem;
+        }
+        
+        .results-clients {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 3rem;
+            flex-wrap: wrap;
+            margin-top: 3rem;
+            padding-top: 3rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .result-client {
+            font-family: var(--font-subheading);
+            font-weight: 600;
+            color: white;
+            font-size: 1.25rem;
+            opacity: 0.8;
+        }
+        
+        /* =========================
+           PRICING SECTION
+           ========================= */
+        .pricing {
+            background: white;
+        }
+        
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+        
+        .pricing-card {
+            background: white;
+            border: 2px solid var(--steel-light);
+            border-radius: 12px;
+            padding: 2.5rem;
+            position: relative;
+            transition: all 0.3s ease;
+        }
+        
+        .pricing-card.recommended {
+            border-color: var(--brand-primary);
+            border-width: 3px;
+            transform: scale(1.05);
+        }
+        
+        .pricing-card.recommended::before {
+            content: 'RECOMENDADO';
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--brand-primary);
+            color: white;
+            padding: 0.5rem 1.5rem;
+            border-radius: 20px;
+            font-family: var(--font-subheading);
+            font-weight: 600;
+            font-size: 0.75rem;
+            letter-spacing: 1px;
+        }
+        
+        .pricing-card:hover {
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+        }
+        
+        .plan-name {
+            font-family: var(--font-heading);
+            font-size: 1.75rem;
+            color: var(--brand-primary);
+            margin-bottom: 0.5rem;
+        }
+        
+        .plan-description {
+            color: var(--technical-gray);
+            font-size: 0.95rem;
+            margin-bottom: 2rem;
+        }
+        
+        .plan-features {
+            list-style: none;
+            margin: 2rem 0;
+        }
+        
+        .plan-features li {
+            padding: 0.75rem 0;
+            padding-left: 2rem;
+            position: relative;
+            color: var(--dark-steel);
+            border-bottom: 1px solid var(--steel-light);
+        }
+        
+        .plan-features li:last-child {
+            border-bottom: none;
+        }
+        
+        .plan-features li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--tech-cyan);
+            font-weight: bold;
+            font-size: 1.25rem;
+        }
+        
+        .plan-cta {
+            margin-top: 2rem;
+        }
+        
+        .pricing-note {
+            text-align: center;
+            margin-top: 3rem;
+            padding: 1.5rem;
+            background: var(--steel-light);
+            border-radius: 8px;
+            color: var(--dark-steel);
+        }
+        
+        /* =========================
+           FAQ SECTION
+           ========================= */
+        .faq {
+            background: var(--steel-light);
+        }
+        
+        .faq-list {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .faq-item {
+            background: white;
+            margin-bottom: 1.5rem;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+        
+        .faq-question {
+            font-family: var(--font-subheading);
+            font-weight: 600;
+            color: var(--brand-primary);
+            padding: 1.5rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background 0.3s ease;
+        }
+        
+        .faq-question:hover {
+            background: var(--steel-light);
+        }
+        
+        .faq-question::after {
+            content: '+';
+            font-size: 1.5rem;
+            color: var(--tech-cyan);
+            transition: transform 0.3s ease;
+        }
+        
+        .faq-item.active .faq-question::after {
+            transform: rotate(45deg);
+        }
+        
+        .faq-answer {
+            padding: 0 1.5rem;
+            max-height: 0;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+        
+        .faq-item.active .faq-answer {
+            padding: 0 1.5rem 1.5rem;
+            max-height: 500px;
+        }
+        
+        .faq-answer p {
+            color: var(--dark-steel);
+            line-height: 1.7;
+        }
+        
+        /* =========================
+           CONTACT SECTION
+           ========================= */
+        .contact {
+            background: white;
+        }
+        
+        .contact-content {
+            max-width: 700px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        .contact-info {
+            display: grid;
+            gap: 1.5rem;
+            margin: 3rem 0;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            padding: 1.5rem;
+            background: var(--steel-light);
+            border-radius: 8px;
+        }
+        
+        .contact-icon {
+            font-size: 1.5rem;
+            color: var(--brand-primary);
+        }
+        
+        .contact-text {
+            font-family: var(--font-subheading);
+            font-weight: 600;
+            color: var(--dark-steel);
+        }
+        
+        .contact-link {
+            color: var(--brand-primary);
+            text-decoration: none;
+        }
+        
+        .contact-link:hover {
+            text-decoration: underline;
+        }
+        
+        /* =========================
+           FOOTER
+           ========================= */
+        .footer {
+            background: var(--industrial-black);
+            color: white;
+            padding: 2.5rem 1.5rem;
+            text-align: center;
+        }
+        
+        .footer-content {
+            max-width: var(--container-max);
+            margin: 0 auto;
+        }
+        
+        .footer p {
+            color: var(--steel-light);
+            margin-bottom: 0.5rem;
+        }
+        
+        .footer-tagline {
+            color: var(--tech-cyan);
+            font-size: 0.95rem;
+        }
+        
+        /* =========================
+           WHATSAPP BUTTON
+           ========================= */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: #25D366;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            box-shadow: 0 5px 20px rgba(37, 211, 102, 0.4);
+            z-index: 999;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            animation: pulse 2s infinite;
+        }
+        
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+            box-shadow: 0 8px 30px rgba(37, 211, 102, 0.6);
+        }
+        
+        @keyframes pulse {
+            0%, 100% {
+                box-shadow: 0 5px 20px rgba(37, 211, 102, 0.4);
+            }
+            50% {
+                box-shadow: 0 5px 30px rgba(37, 211, 102, 0.7);
+            }
+        }
+        
+        /* =========================
+           RESPONSIVE DESIGN
+           ========================= */
+        @media (max-width: 968px) {
+            .nav-menu {
+                position: fixed;
+                left: -100%;
+                top: 70px;
+                flex-direction: column;
+                background: white;
+                width: 100%;
+                text-align: center;
+                transition: 0.3s;
+                box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+                padding: 2rem 0;
+            }
+            
+            .nav-menu.active {
+                left: 0;
+            }
+            
+            .menu-toggle {
+                display: flex;
+            }
+            
+            .hero-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .hero-visual {
+                order: -1;
+            }
+            
+            .hero-stats {
+                grid-template-columns: 1fr;
+            }
+            
+            .pricing-card.recommended {
+                transform: scale(1);
+            }
+        }
+        
+        @media (max-width: 640px) {
+            :root {
+                --section-padding: 3rem 1rem;
+            }
+            
+            .hero {
+                padding: 4rem 1rem 3rem;
+            }
+            
+            .hero-cta {
+                flex-direction: column;
+            }
+            
+            .btn {
+                width: 100%;
+            }
+            
+            .whatsapp-float {
+                width: 50px;
+                height: 50px;
+                font-size: 1.5rem;
+                bottom: 20px;
+                right: 20px;
+            }
+        }
+        
+        /* =========================
+           ANIMATIONS
+           ========================= */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease;
+        }
+        
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <div class="container nav">
-      <div class="logo">
-        <div class="logo-badge" aria-hidden="true">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M4 17h6l2-10 3 6h5" stroke="#001a2b" stroke-width="2"/><circle cx="6" cy="19" r="2" fill="#001a2b"/><circle cx="18" cy="19" r="2" fill="#001a2b"/></svg>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="#" class="logo">
+                    <img src="./assets/images/logo-metal-marketing.png" alt="Metal Marketing Logo">
+                </a>
+                <button class="menu-toggle" id="menuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#proceso">Proceso</a></li>
+                    <li><a href="#resultados">Resultados</a></li>
+                    <li><a href="#precios">Precios</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
         </div>
-        <span>Metal Marketing</span>
-      </div>
-      <nav>
-        <a href="#servicios">Servicios</a>
-        <a href="#proceso">Proceso</a>
-        <a href="#resultados">Resultados</a>
-        <a href="#precios">Precios</a>
-        <a href="#contacto" class="btn small">Contacto</a>
-      </nav>
-    </div>
-  </header>
+    </header>
 
-  <main>
+    <!-- HERO -->
     <section class="hero">
-      <div class="container grid">
-        <div>
-          <span class="badge">Especialistas en metalmecánica · B2B</span>
-          <h1>Generamos <span class="grad">consultas reales</span> para tu empresa metalmecánica</h1>
-          <p class="lead">Campañas de interacción y WhatsApp para fabricantes de puertas metálicas, herrajes, estructuras y aberturas. <strong>Prueba de 7 días</strong> para ver resultados antes de invertir.</p>
-          <div class="stats">
-            <div class="stat card">CPL desde <strong>$500–$1.000 ARS</strong></div>
-            <div class="stat card">Setup en <strong>48 hs</strong></div>
-            <div class="stat card">Reportes <strong>claros</strong></div>
-          </div>
-          <div style="margin:22px 0 0;display:flex;gap:12px;flex-wrap:wrap">
-            <a class="btn primary" href="https://wa.me/5493510000000?text=Hola%20Metal%20Marketing%2C%20quiero%20la%20prueba%20de%207%20d%C3%ADas" target="_blank" rel="noopener">Quiero la prueba de 7 días</a>
-            <a class="btn" href="#servicios">Ver servicios</a>
-          </div>
-          <div style="margin-top:18px" class="muted small">Clientes: Lealum SA · ACC Herrajes</div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <span class="badge">Especialistas en metalmecánica · B2B</span>
+                <h1>Generamos consultas reales y efectivas para tu empresa metalmecánica</h1>
+                <p class="hero-description">
+                    Campañas de interacción en Instagram y WhatsApp para fabricantes de puertas metálicas, herrajes, estructuras, aberturas y todo lo relacionado a la industria Metal Mecánica. <strong>Prueba de 7 días</strong> para ver resultados antes de invertir.
+                </p>
+                
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-value">$1.500-$2.500</span>
+                        <span class="stat-label">Costo por consulta (ARS)</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-value">48 hs</span>
+                        <span class="stat-label">Configuración de campañas</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-value">Reportes</span>
+                        <span class="stat-label">Claros y accionables</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-value">A/B Testing</span>
+                        <span class="stat-label">Anuncios optimizados</span>
+                    </div>
+                </div>
+                
+                <div class="hero-cta">
+                    <a href="#contacto" class="btn btn-primary">Quiero la prueba de 7 días</a>
+                    <a href="#contacto" class="btn btn-secondary">Agendar videollamada</a>
+                </div>
+                
+                <div class="clients-badge">
+                    <p>Trabajamos con:</p>
+                    <div class="clients-logos">
+                        <span class="client-logo">Lealum SA</span>
+                        <span class="client-logo">ACC Herrajes</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-visual">
+                <!-- Aquí puedes colocar un mockup de dashboard o imagen ilustrativa -->
+                <img src="./assets/images/dashboard-preview.png" alt="Panel de métricas de campaña" loading="lazy">
+            </div>
         </div>
-        <div class="hero-visual card" aria-label="Ilustración de métricas y anuncios">
-          <svg viewBox="0 0 640 360" width="100%" height="auto" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="dashTitle"><title id="dashTitle">Panel con métricas de campaña</title>
-            <defs>
-              <linearGradient id="grad" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#22d3ee" offset="0"/><stop stop-color="#3b82f6" offset="1"/></linearGradient>
-            </defs>
-            <rect x="0" y="0" width="640" height="360" rx="16" fill="#0b1220" />
-            <rect x="20" y="20" width="600" height="60" rx="12" fill="#0f172a" stroke="#22324a"/>
-            <rect x="20" y="100" width="280" height="220" rx="12" fill="#0f172a" stroke="#22324a"/>
-            <rect x="320" y="100" width="300" height="100" rx="12" fill="#0f172a" stroke="#22324a"/>
-            <rect x="320" y="220" width="300" height="100" rx="12" fill="#0f172a" stroke="#22324a"/>
-            <!-- bars -->
-            <g transform="translate(40,130)">
-              <rect width="24" height="120" x="0" y="40" fill="url(#grad)" rx="6"/>
-              <rect width="24" height="160" x="40" y="0" fill="url(#grad)" rx="6"/>
-              <rect width="24" height="90" x="80" y="70" fill="url(#grad)" rx="6"/>
-              <rect width="24" height="140" x="120" y="20" fill="url(#grad)" rx="6"/>
-              <rect width="24" height="60" x="160" y="100" fill="url(#grad)" rx="6"/>
-            </g>
-            <!-- sparkline -->
-            <polyline points="330,240 360,230 390,250 420,210 450,220 480,195 510,205 540,190 600,200" stroke="#22d3ee" fill="none" stroke-width="3"/>
-            <!-- kpis -->
-            <text x="340" y="140" fill="#e6eef8" font-size="18">Mensajes</text>
-            <text x="340" y="165" fill="#bbdefb" font-size="28" font-weight="700">+128</text>
-            <text x="340" y="260" fill="#e6eef8" font-size="18">CPL</text>
-            <text x="340" y="285" fill="#bbdefb" font-size="28" font-weight="700">$650</text>
-          </svg>
-        </div>
-      </div>
     </section>
 
-    <section id="servicios">
-      <div class="container">
-        <h2>Servicios</h2>
-        <p class="muted">Estrategía simple que funciona en industria: atraer, conversar, cotizar.</p>
-        <div class="grid-3">
-          <article class="card service">
-            <h3>Campañas de Interacción & Mensajes</h3>
-            <p>Meta Ads enfocados en <strong>consultas por WhatsApp</strong> e Instagram. Creativos industriales, segmentación local y optimización continua.</p>
-            <ul class="muted">
-              <li>Segmentación por obra, portones, aberturas, construcción</li>
-              <li>Creatividades técnicas (materiales, calibres, especificaciones)</li>
-              <li>Optimización de CPL / mensajes</li>
-            </ul>
-          </article>
-          <article class="card service">
-            <h3>Automatización de Respuestas</h3>
-            <p>Flujos con <strong>WhatsApp/IG</strong> para calificar leads: ubicación, medidas, urgencia, foto de referencia y derivación a ventas.</p>
-            <ul class="muted">
-              <li>Respuestas 24/7</li>
-              <li>Captura de datos clave</li>
-              <li>Handoff claro al vendedor</li>
-            </ul>
-          </article>
-          <article class="card service">
-            <h3>Reporte & Toma de Decisiones</h3>
-            <p>Tablero simple con resultados y recomendaciones. Enfocado en <strong>pedidos y cotizaciones</strong>, no en vanity metrics.</p>
-            <ul class="muted">
-              <li>KPIs: clics, mensajes, CPL</li>
-              <li>Aprendizajes por creativo</li>
-              <li>Plan de mejora mensual</li>
-            </ul>
-          </article>
+    <!-- SERVICIOS -->
+    <section id="servicios" class="section services">
+        <div class="container">
+            <div class="section-title">
+                <h2 class="fade-in">Servicios</h2>
+                <p class="section-subtitle fade-in">Estrategia probada que funciona en la industria: atraer, conversar, cotizar.</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card fade-in">
+                    <div class="service-icon">📱</div>
+                    <h3>Campañas de Interacción & Mensajes</h3>
+                    <p>Meta Ads enfocados en consultas por WhatsApp e Instagram. Creativos industriales, segmentación local y optimización continua.</p>
+                    <ul class="service-features">
+                        <li>Segmentación por intereses y comportamientos</li>
+                        <li>Creatividades técnicas (materiales, calibres, especificaciones)</li>
+                        <li>Optimización de CPL / mensajes</li>
+                        <li>Reporte semanal o quincenal</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card fade-in">
+                    <div class="service-icon">🤖</div>
+                    <h3>Automatización de Respuestas</h3>
+                    <p>Flujos con WhatsApp/IG para calificar leads: ubicación, medidas, urgencia, foto de referencia y derivación a ventas.</p>
+                    <ul class="service-features">
+                        <li>Respuestas 24/7</li>
+                        <li>Captura de datos clave</li>
+                        <li>Handoff claro al vendedor</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card fade-in">
+                    <div class="service-icon">📊</div>
+                    <h3>Reporte & Toma de Decisiones</h3>
+                    <p>Tablero simple con resultados y recomendaciones. Enfocado en pedidos y cotizaciones, no en vanity metrics.</p>
+                    <ul class="service-features">
+                        <li>KPIs: clics, mensajes, CPL</li>
+                        <li>Creación de Landing page</li>
+                        <li>Aprendizajes por creativo</li>
+                        <li>Plan de captura de Leads y automatización de correos</li>
+                    </ul>
+                </div>
+            </div>
         </div>
-      </div>
     </section>
 
-    <section id="proceso">
-      <div class="container">
-        <h2>Cómo trabajamos</h2>
-        <p class="muted">Proceso en 4 pasos, listo en 48 horas.</p>
-        <div class="process">
-          <div class="card step"><strong>1. Diagnóstico</strong><br><span class="muted">15–20 min para entender producto, zonas y capacidad.</span></div>
-          <div class="card step"><strong>2. Creativos</strong><br><span class="muted">Artes industriales, fotos y textos técnicos.</span></div>
-          <div class="card step"><strong>3. Lanzamiento</strong><br><span class="muted">Campaña de prueba 7 días enfocada a mensajes.</span></div>
-          <div class="card step"><strong>4. Escala</strong><br><span class="muted">Informe + propuesta según resultados.</span></div>
+    <!-- PROCESO -->
+    <section id="proceso" class="section process">
+        <div class="container">
+            <div class="section-title">
+                <h2 class="fade-in">Cómo trabajamos</h2>
+                <p class="section-subtitle fade-in">Proceso en 4 pasos, listo en 48 horas.</p>
+            </div>
+            
+            <div class="process-steps">
+                <div class="process-step fade-in">
+                    <div class="step-number">1</div>
+                    <h3>Diagnóstico</h3>
+                    <p>15–20 min para entender producto, zonas y capacidad de respuesta.</p>
+                </div>
+                
+                <div class="process-step fade-in">
+                    <div class="step-number">2</div>
+                    <h3>Creativos</h3>
+                    <p>Artes industriales, fotos y textos técnicos adaptados a tu audiencia.</p>
+                </div>
+                
+                <div class="process-step fade-in">
+                    <div class="step-number">3</div>
+                    <h3>Lanzamiento</h3>
+                    <p>Campaña de prueba 7 días enfocada a mensajes y conversiones.</p>
+                </div>
+                
+                <div class="process-step fade-in">
+                    <div class="step-number">4</div>
+                    <h3>Escala</h3>
+                    <p>Informe + propuesta de optimización según resultados obtenidos.</p>
+                </div>
+            </div>
         </div>
-      </div>
     </section>
 
-    <section id="resultados">
-      <div class="container">
-        <h2>Resultados que importan</h2>
-        <div class="kpis">
-          <div class="card kpi"><div class="muted">CPL desde</div><div style="font-size:28px;font-weight:700">$500–$1.000</div></div>
-          <div class="card kpi"><div class="muted">Mensajes en 7 días</div><div style="font-size:28px;font-weight:700">20–60</div></div>
-          <div class="card kpi"><div class="muted">Tiempo de setup</div><div style="font-size:28px;font-weight:700">48 hs</div></div>
+    <!-- RESULTADOS -->
+    <section id="resultados" class="section results">
+        <div class="container">
+            <div class="section-title">
+                <h2 class="fade-in">Resultados que importan</h2>
+            </div>
+            
+            <div class="results-stats">
+                <div class="result-stat fade-in">
+                    <span class="result-value">$1.500-$2.500</span>
+                    <span class="result-label">CPL promedio (ARS)</span>
+                </div>
+                
+                <div class="result-stat fade-in">
+                    <span class="result-value">20–60</span>
+                    <span class="result-label">Mensajes en 7 días</span>
+                </div>
+                
+                <div class="result-stat fade-in">
+                    <span class="result-value">48 hs</span>
+                    <span class="result-label">Tiempo de setup</span>
+                </div>
+            </div>
+            
+            <div class="results-clients">
+                <span class="result-client">Lealum SA</span>
+                <span class="result-client">ACC Herrajes</span>
+                <span class="result-client">Tu Empresa aquí</span>
+            </div>
         </div>
-        <div style="margin-top:22px" class="logos">
-          <div class="logo-item">Lealum SA</div>
-          <div class="logo-item">ACC Herrajes</div>
-          <div class="logo-item">Tu Empresa aquí</div>
-        </div>
-      </div>
     </section>
 
-    <section id="precios">
-      <div class="container">
-        <h2>Planes</h2>
-        <p class="muted">Honorarios por gestión + inversión publicitaria a cargo del cliente.</p>
-        <div class="pricing">
-          <div class="card price-card">
-            <div class="pill">Inicio</div>
-            <h3>$150.000 / mes</h3>
-            <p class="muted">Ideal para una línea de producto local.</p>
-            <ul class="muted">
-              <li>1 cuenta Meta</li>
-              <li>2 creatividades activas</li>
-              <li>Reporte mensual</li>
-            </ul>
-            <a class="btn" href="https://wa.me/5493510000000?text=Quiero%20el%20Plan%20Inicio%20de%20Metal%20Marketing" target="_blank" rel="noopener">Quiero este</a>
-          </div>
-          <div class="card price-card">
-            <div class="pill" style="background:rgba(59,130,246,.18);color:#dbeafe;border-color:rgba(59,130,246,.35)">Recomendado</div>
-            <h3>$200.000 / mes</h3>
-            <p class="muted">Para captar volumen sostenido de consultas.</p>
-            <ul class="muted">
-              <li>1–2 cuentas Meta</li>
-              <li>4 creatividades activas</li>
-              <li>Reporte quincenal</li>
-              <li>Automatización básica WhatsApp/IG</li>
-            </ul>
-            <a class="btn primary" href="https://wa.me/5493510000000?text=Quiero%20el%20Plan%20Recomendado%20de%20Metal%20Marketing" target="_blank" rel="noopener">Elegir este</a>
-          </div>
-          <div class="card price-card">
-            <div class="pill" style="background:rgba(34,197,94,.18);color:#bbf7d0;border-color:rgba(34,197,94,.35)">Escala</div>
-            <h3>$250.000+ / mes</h3>
-            <p class="muted">Para múltiples líneas o varias plazas.</p>
-            <ul class="muted">
-              <li>2+ cuentas Meta</li>
-              <li>6 creatividades activas</li>
-              <li>Reporte semanal</li>
-              <li>Automatización avanzada + CRM</li>
-            </ul>
-            <a class="btn" href="https://wa.me/5493510000000?text=Quiero%20el%20Plan%20Escala%20de%20Metal%20Marketing" target="_blank" rel="noopener">Hablemos</a>
-          </div>
+    <!-- PRECIOS -->
+    <section id="precios" class="section pricing">
+        <div class="container">
+            <div class="section-title">
+                <h2 class="fade-in">Planes</h2>
+                <p class="section-subtitle fade-in">Honorarios por gestión + inversión publicitaria a cargo del cliente.</p>
+            </div>
+            
+            <div class="pricing-grid">
+                <!-- Plan Starter -->
+                <div class="pricing-card fade-in">
+                    <h3 class="plan-name">Starter</h3>
+                    <p class="plan-description">Ideal para una línea de producto o servicio local.</p>
+                    <ul class="plan-features">
+                        <li>1 cuenta Meta (Facebook)</li>
+                        <li>4 creatividades activas</li>
+                        <li>Reporte quincenal</li>
+                    </ul>
+                    <div class="plan-cta">
+                        <a href="#contacto" class="btn btn-secondary" style="width: 100%;">Quiero este</a>
+                    </div>
+                </div>
+                
+                <!-- Plan Intermedio -->
+                <div class="pricing-card recommended fade-in">
+                    <h3 class="plan-name">Intermedio</h3>
+                    <p class="plan-description">Para captar volumen sostenido de consultas.</p>
+                    <ul class="plan-features">
+                        <li>1–2 cuentas Meta (Facebook)</li>
+                        <li>8 creatividades activas</li>
+                        <li>Reporte quincenal</li>
+                        <li>Automatización básica WhatsApp/IG</li>
+                        <li>Automatización de correos</li>
+                        <li>Landing page de captura de datos</li>
+                    </ul>
+                    <div class="plan-cta">
+                        <a href="#contacto" class="btn btn-primary" style="width: 100%;">Elegir este</a>
+                    </div>
+                </div>
+                
+                <!-- Plan Avanzado -->
+                <div class="pricing-card fade-in">
+                    <h3 class="plan-name">Avanzado</h3>
+                    <p class="plan-description">Para múltiples líneas de negocio.</p>
+                    <ul class="plan-features">
+                        <li>Campañas de Meta y Google</li>
+                        <li>12 creatividades activas</li>
+                        <li>Reporte semanal</li>
+                        <li>Automatización avanzada + CRM</li>
+                        <li>Envío de cotizaciones por correo</li>
+                        <li>Creación de Página web y landing page</li>
+                    </ul>
+                    <div class="plan-cta">
+                        <a href="#contacto" class="btn btn-accent" style="width: 100%;">Hablemos</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="pricing-note fade-in">
+                <p><strong>Agenda una videollamada para elegir tu plan y recibir una propuesta personalizada.</strong></p>
+            </div>
         </div>
-        <p class="small muted" style="margin-top:12px">* Valores de honorarios de referencia. Ajustables a inflación y complejidad. </p>
-      </div>
     </section>
 
-    <section id="faq">
-      <div class="container">
-        <h2>Preguntas frecuentes</h2>
-        <div class="faq">
-          <div class="card" style="padding:18px">
-            <strong>¿Necesito fotos o las generan ustedes?</strong>
-            <p class="muted">Podés enviarnos fotos reales de tus trabajos. También podemos crear creatividades técnicas y renders básicos de apoyo.</p>
-          </div>
-          <div class="card" style="padding:18px">
-            <strong>¿En cuánto tiempo veo resultados?</strong>
-            <p class="muted">En la prueba de 7 días ya deberías recibir consultas. Luego optimizamos para bajar CPL y aumentar calidad.</p>
-          </div>
-          <div class="card" style="padding:18px">
-            <strong>¿Trabajan con otras industrias?</strong>
-            <p class="muted">Nuestro foco es metalmecánica. Si tu negocio es afín (obra, cerramientos, automatización), también podemos ayudarte.</p>
-          </div>
-          <div class="card" style="padding:18px">
-            <strong>¿Cómo es la forma de pago?</strong>
-            <p class="muted">Honorarios por transferencia y pauta directa en tu cuenta publicitaria. Transparencia total.</p>
-          </div>
+    <!-- FAQ -->
+    <section class="section faq">
+        <div class="container">
+            <div class="section-title">
+                <h2 class="fade-in">Preguntas frecuentes</h2>
+            </div>
+            
+            <div class="faq-list">
+                <div class="faq-item fade-in">
+                    <div class="faq-question">
+                        ¿Necesito fotos o las generan ustedes?
+                    </div>
+                    <div class="faq-answer">
+                        <p>Podés enviarnos fotos reales de tus trabajos. También podemos crear creatividades técnicas y videos de apoyo para maximizar el impacto de tus campañas.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item fade-in">
+                    <div class="faq-question">
+                        ¿En cuánto tiempo veo resultados?
+                    </div>
+                    <div class="faq-answer">
+                        <p>En la prueba de 7 días ya deberías recibir consultas. Luego optimizamos para bajar el CPL y aumentar la calidad de los leads.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item fade-in">
+                    <div class="faq-question">
+                        ¿Trabajan con otras industrias?
+                    </div>
+                    <div class="faq-answer">
+                        <p>Nuestro foco es la metalmecánica. Si tu negocio no pertenece a esta industria podés agendar una videollamada sin compromiso y estudiamos tu caso.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item fade-in">
+                    <div class="faq-question">
+                        ¿Cómo es la forma de pago?
+                    </div>
+                    <div class="faq-answer">
+                        <p>Honorarios por transferencia y pauta directa en tu cuenta publicitaria. De esta forma mantenés control total de tu inversión.</p>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
     </section>
 
-    <section id="contacto">
-      <div class="container">
-        <h2>Contacto</h2>
-        <p class="muted">Contanos tu caso y te proponemos una campaña de prueba.</p>
-        <div class="card" style="padding:22px;display:grid;gap:8px">
-          <div><strong>WhatsApp:</strong> <a href="https://wa.me/5493510000000" target="_blank" rel="noopener">+54 9 351 000 0000</a></div>
-          <div><strong>Email:</strong> <a href="mailto:hola@tudominio.com">hola@tudominio.com</a></div>
-          <div><strong>Ubicación:</strong> Córdoba, Argentina</div>
+    <!-- CONTACTO -->
+    <section id="contacto" class="section contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="section-title">
+                    <h2 class="fade-in">Contacto</h2>
+                    <p class="section-subtitle fade-in">Contanos tu caso y te proponemos una campaña de prueba.</p>
+                </div>
+                
+                <div class="contact-info">
+                    <div class="contact-item fade-in">
+                        <span class="contact-icon">📱</span>
+                        <div>
+                            <p class="contact-text">WhatsApp</p>
+                            <a href="https://wa.me/5493515310015?text=Hola%20Metal%20Marketing,%20quiero%20saber%20como%20atraer%20más%20clientes%20a%20mi%20negocio." class="contact-link" target="_blank">+54 9 351 5310015</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item fade-in">
+                        <span class="contact-icon">✉️</span>
+                        <div>
+                            <p class="contact-text">Email</p>
+                            <a href="mailto:metalmarketingagencia@gmail.com" class="contact-link">metalmarketingagencia@gmail.com</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item fade-in">
+                        <span class="contact-icon">📍</span>
+                        <div>
+                            <p class="contact-text">Ubicación</p>
+                            <span>Córdoba, Argentina</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
     </section>
-  </main>
 
-  <footer>
-    <div class="container" style="display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap">
-      <div>© <span id="y"></span> Metal Marketing · Industria metalmecánica</div>
-      <div class="small">Hecho con enfoque en resultados: <em>clientes reales, no seguidores</em>.</div>
-    </div>
-  </footer>
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; Copyright 2025. Metal Marketing Agencia. Todos los derechos reservados.</p>
+            <p class="footer-tagline">Hecho con enfoque en resultados: clientes reales, no seguidores.</p>
+        </div>
+    </footer>
 
-  <div class="whatsapp"><a href="https://wa.me/5493510000000?text=Hola%20Metal%20Marketing%2C%20quiero%20saber%20c%C3%B3mo%20generar%20m%C3%A1s%20consultas" target="_blank" rel="noopener" aria-label="Chatear por WhatsApp">
-    <!-- WA icon -->
-    <svg width="18" height="18" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M19.11 17.51c-.29-.14-1.68-.83-1.94-.92-.26-.1-.45-.14-.63.14-.19.29-.73.92-.9 1.1-.17.19-.33.21-.62.07-1.7-.85-2.82-1.52-3.95-3.44-.3-.51.31-.47.88-1.56.1-.19.05-.35-.02-.49-.07-.14-.63-1.52-.86-2.08-.23-.55-.47-.47-.63-.48l-.54-.01c-.19 0-.49.07-.75.35-.26.29-.99.97-.99 2.36 0 1.39 1.02 2.74 1.16 2.93.14.19 2.01 3.2 4.87 4.49.68.29 1.21.46 1.62.59.68.22 1.3.19 1.79.11.55-.08 1.68-.69 1.92-1.36.24-.67.24-1.25.17-1.36-.07-.11-.26-.18-.55-.32z" fill="#083b17"/><path d="M26.88 5.12C24.35 2.59 21.02 1.2 17.5 1.2 9.53 1.2 3 7.73 3 15.7c0 2.58.68 5.09 1.98 7.29L3 31l8.22-1.96c2.14 1.17 4.53 1.79 6.97 1.79 7.97 0 14.5-6.53 14.5-14.5 0-3.52-1.39-6.85-3.92-9.38zM17.5 28.31c-2.27 0-4.49-.6-6.44-1.73l-.46-.27-4.88 1.16 1.04-4.76-.3-.49c-1.23-2.02-1.89-4.35-1.89-6.72 0-7.28 5.93-13.21 13.21-13.21 3.53 0 6.85 1.38 9.35 3.89s3.89 5.82 3.89 9.35c0 7.28-5.93 13.21-13.21 13.21z" fill="#083b17"/></svg>
-    <span>Chatear</span>
-  </a></div>
+    <!-- WHATSAPP FLOAT BUTTON -->
+    <a href="https://wa.me/5493515310015?text=Hola%20Metal%20Marketing,%20quiero%20saber%20como%20atraer%20más%20clientes%20a%20mi%20negocio." class="whatsapp-float" target="_blank" aria-label="Contactar por WhatsApp">
+        💬
+    </a>
 
-  <script>
-    document.getElementById('y').textContent = new Date().getFullYear();
-  </script>
-
-  <!-- Google Analytics / Gtag (reemplazar G-XXXX) -->
-  <!--
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXX"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-XXXX');
-  </script>
-  -->
-
-  <!-- JSON-LD (opcional) -->
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"LocalBusiness",
-    "name":"Metal Marketing",
-    "image":"https://www.tudominio.com/og-image.jpg",
-    "url":"https://www.tudominio.com/",
-    "telephone":"+54 9 351 000 0000",
-    "address":{"@type":"PostalAddress","addressLocality":"Córdoba","addressCountry":"AR"},
-    "description":"Agencia especializada en generación de clientes para empresas metalmecánicas. Campañas de interacción y WhatsApp que generan consultas reales."
-  }
-  </script>
+    <!-- JAVASCRIPT -->
+    <script>
+        // Menu Toggle Mobile
+        const menuToggle = document.getElementById('menuToggle');
+        const navMenu = document.getElementById('navMenu');
+        
+        menuToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+        
+        // Close menu when clicking on link
+        document.querySelectorAll('.nav-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+            });
+        });
+        
+        // FAQ Accordion
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const faqItem = question.parentElement;
+                const isActive = faqItem.classList.contains('active');
+                
+                // Close all other FAQs
+                document.querySelectorAll('.faq-item').forEach(item => {
+                    item.classList.remove('active');
+                });
+                
+                // Toggle current FAQ
+                if (!isActive) {
+                    faqItem.classList.add('active');
+                }
+            });
+        });
+        
+        // Intersection Observer for Fade In Animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+        
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+        
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
 </body>
 </html>
