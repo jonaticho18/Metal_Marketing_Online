@@ -161,7 +161,7 @@
         }
         
         .logo img {
-            height: 80px; /* Duplicado de 40px a 80px */
+            height: 40px;
             width: auto;
         }
         
@@ -249,7 +249,7 @@
         }
         
         /* =========================
-           INFINITE CAROUSEL
+           INFINITE CAROUSEL - NUEVO
            ========================= */
         .carousel-container {
             margin-top: 2rem;
@@ -366,10 +366,6 @@
             margin-bottom: 1.5rem;
         }
         
-        .hero h1 .highlight {
-            color: var(--tech-cyan);
-        }
-        
         .hero-description {
             font-size: 1.25rem;
             color: var(--dark-steel);
@@ -431,8 +427,8 @@
             border-top: 1px solid var(--steel-light);
         }
         
-        .clients-badge p {
-            font-size: 2rem;
+        .clients-badge > p {
+            font-size: 1.75rem;
             color: var(--brand-primary);
             font-weight: 600;
             margin-bottom: 1.5rem;
@@ -610,8 +606,8 @@
             border-top: 1px solid rgba(255, 255, 255, 0.1);
         }
         
-        .results-carousel p {
-            font-size: 2rem;
+        .results-carousel > p {
+            font-size: 1.75rem;
             color: white;
             font-weight: 600;
             margin-bottom: 2rem;
@@ -988,10 +984,6 @@
             .pricing-card.recommended {
                 transform: scale(1);
             }
-            
-            .logo img {
-                height: 60px;
-            }
         }
         
         @media (max-width: 640px) {
@@ -1019,11 +1011,11 @@
                 right: 20px;
             }
             
-            .clients-badge p {
+            .clients-badge > p {
                 font-size: 1.5rem;
             }
             
-            .results-carousel p {
+            .results-carousel > p {
                 font-size: 1.5rem;
             }
         }
@@ -1049,7 +1041,7 @@
         <div class="container">
             <nav class="nav">
                 <a href="#" class="logo">
-                    <img src="./assets/images/metal-marketing-logo.png" alt="Metal Marketing Logo">
+                    <img src="./assets/images/logo-metal-marketing.png" alt="Metal Marketing Logo">
                 </a>
                 <button class="menu-toggle" id="menuToggle">
                     <span></span>
@@ -1060,7 +1052,7 @@
                     <li><a href="#servicios">Servicios</a></li>
                     <li><a href="#proceso">Proceso</a></li>
                     <li><a href="#resultados">Resultados</a></li>
-                    <li><a href="#planes">Planes</a></li>
+                    <li><a href="#precios">Precios</a></li>
                     <li><a href="#contacto">Contacto</a></li>
                 </ul>
             </nav>
@@ -1072,7 +1064,7 @@
         <div class="hero-content">
             <div class="hero-text">
                 <span class="badge">Especialistas en metalmecánica · B2B</span>
-                <h1>Generamos <span class="highlight">consultas reales y efectivas</span> para tu empresa metalmecánica</h1>
+                <h1>Generamos consultas reales y efectivas para tu empresa metalmecánica</h1>
                 <p class="hero-description">
                     Campañas de interacción en Instagram y WhatsApp para fabricantes de puertas metálicas, herrajes, estructuras, aberturas y todo lo relacionado a la industria Metal Mecánica. <strong>Prueba de 7 días</strong> para ver resultados antes de invertir.
                 </p>
@@ -1080,7 +1072,7 @@
                 <div class="hero-stats">
                     <div class="stat-item">
                         <span class="stat-value">$1.500-$2.500</span>
-                        <span class="stat-label">Costo por Lead (ARS)</span>
+                        <span class="stat-label">Costo por consulta (ARS)</span>
                     </div>
                     <div class="stat-item">
                         <span class="stat-value">48 hs</span>
@@ -1098,9 +1090,10 @@
                 
                 <div class="hero-cta">
                     <a href="#contacto" class="btn btn-primary">Quiero la prueba de 7 días</a>
-                    <a href="https://calendly.com/metalmarketingagencia/30min" class="btn btn-secondary" target="_blank">Agendar videollamada</a>
+                    <a href="#contacto" class="btn btn-secondary">Agendar videollamada</a>
                 </div>
                 
+                <!-- CARRUSEL AGREGADO EN HERO -->
                 <div class="clients-badge">
                     <p>Trabajamos con:</p>
                     <div class="carousel-container">
@@ -1138,8 +1131,7 @@
             </div>
             
             <div class="hero-visual">
-                <!-- IMAGEN RESTAURADA - logo-metal-marketing-3d.jpg -->
-                <img src="./assets/images/logo-metal-marketing-3d.jpg" alt="Metal Marketing 3D" loading="lazy">
+                <img src="./assets/images/dashboard-preview.png" alt="Panel de métricas de campaña" loading="lazy">
             </div>
         </div>
     </section>
@@ -1251,6 +1243,7 @@
                 </div>
             </div>
             
+            <!-- CARRUSEL AGREGADO EN RESULTADOS -->
             <div class="results-carousel">
                 <p>Clientes que confían en nosotros</p>
                 <div class="carousel-container">
@@ -1296,8 +1289,8 @@
         </div>
     </section>
 
-    <!-- PLANES -->
-    <section id="planes" class="section pricing">
+    <!-- PRECIOS -->
+    <section id="precios" class="section pricing">
         <div class="container">
             <div class="section-title">
                 <h2 class="fade-in">Planes</h2>
@@ -1315,7 +1308,7 @@
                         <li>Reporte quincenal</li>
                     </ul>
                     <div class="plan-cta">
-                        <a href="https://calendly.com/metalmarketingagencia/30min" class="btn btn-secondary" style="width: 100%;" target="_blank">Quiero este</a>
+                        <a href="#contacto" class="btn btn-secondary" style="width: 100%;">Quiero este</a>
                     </div>
                 </div>
                 
@@ -1332,7 +1325,7 @@
                         <li>Landing page de captura de datos</li>
                     </ul>
                     <div class="plan-cta">
-                        <a href="https://calendly.com/metalmarketingagencia/30min" class="btn btn-primary" style="width: 100%;" target="_blank">Elegir este</a>
+                        <a href="#contacto" class="btn btn-primary" style="width: 100%;">Elegir este</a>
                     </div>
                 </div>
                 
@@ -1349,7 +1342,7 @@
                         <li>Creación de Página web y landing page</li>
                     </ul>
                     <div class="plan-cta">
-                        <a href="https://calendly.com/metalmarketingagencia/30min" class="btn btn-accent" style="width: 100%;" target="_blank">Hablemos</a>
+                        <a href="#contacto" class="btn btn-accent" style="width: 100%;">Hablemos</a>
                     </div>
                 </div>
             </div>
@@ -1527,3 +1520,4 @@
     </script>
 </body>
 </html>
+
