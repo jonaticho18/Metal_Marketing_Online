@@ -2,52 +2,53 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <title>Metal Marketing · Forjamos resultados para tu negocio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Estrategias de marketing digital que forjan resultados reales: campañas en Meta Ads y Google Ads, embudos simples y automatizaciones para generar consultas, clientes y ventas en Argentina." />
+  <title>Metal Marketing · Forjamos resultados reales para tu negocio</title>
+
+  <meta name="description" content="Agencia de marketing digital enfocada en generar consultas, clientes y ventas para negocios y marcas en Argentina. Campañas en Meta Ads y Google Ads, embudos simples y automatizaciones que forjan resultados reales.">
+  <meta name="keywords" content="marketing digital, generación de leads, Meta Ads, Google Ads, embudos de ventas, automatizaciones, campañas WhatsApp, marketing para negocios, Argentina">
+  <meta name="author" content="Metal Marketing">
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Metal Marketing · Forjamos resultados para tu negocio" />
-  <meta property="og:description" content="Marketing digital orientado a resultados: más consultas, más clientes, más ventas." />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="./assets/images/og-metal-marketing.jpg" />
+  <meta property="og:title" content="Metal Marketing · Forjamos resultados para tu negocio">
+  <meta property="og:description" content="Estrategias de marketing digital que generan consultas, clientes y ventas reales. Meta Ads, Google Ads, embudos y automatizaciones para negocios en Argentina.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="./assets/images/og-image-metal-marketing.jpg">
 
   <!-- Favicon -->
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-metal-marketing.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-metal-marketing.png">
 
   <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;600;700;800&family=Exo+2:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;600;700&family=Exo+2:wght@400;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 
   <style>
     :root {
-      /* Brand Colors */
-      --mm-red: #d62828;
-      --mm-orange: #f77f00;
-      --mm-dark: #0b0b0f;
-      --mm-dark-alt: #16161d;
-      --mm-gray: #b5b5b5;
-      --mm-gray-dark: #2b2b2b;
-      --mm-bg: #050509;
-      --mm-light: #f5f5f5;
+      --brand-red: #D62828;
+      --brand-orange: #F77F00;
+      --brand-dark: #0B0E14;
+      --brand-gray-dark: #2B2B2B;
+      --brand-gray: #B5B5B5;
+      --brand-light: #F5F5F5;
+      --text-main: #222222;
+      --text-muted: #666666;
 
-      /* Fonts */
-      --font-heading: "League Spartan", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      --font-sub: "Exo 2", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      --font-body: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      --font-heading: 'League Spartan', system-ui, sans-serif;
+      --font-sub: 'Exo 2', system-ui, sans-serif;
+      --font-body: 'Inter', system-ui, sans-serif;
 
-      --max-width: 1140px;
-      --radius-lg: 18px;
+      --container-width: 1160px;
+      --radius-lg: 16px;
       --radius-md: 10px;
-      --transition-fast: 0.2s ease;
-      --transition: 0.3s ease;
+      --shadow-soft: 0 12px 40px rgba(0, 0, 0, 0.14);
+      --shadow-card: 0 10px 30px rgba(0, 0, 0, 0.12);
     }
 
     * {
-      box-sizing: border-box;
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
     }
 
     html {
@@ -56,8 +57,8 @@
 
     body {
       font-family: var(--font-body);
-      background: radial-gradient(circle at top, #141424 0, #050509 55%, #020106 100%);
-      color: #f9f9f9;
+      background: radial-gradient(circle at top left, #1e1e1e 0, #050509 45%, #000000 100%);
+      color: #ffffff;
       line-height: 1.6;
       overflow-x: hidden;
     }
@@ -72,87 +73,87 @@
       display: block;
     }
 
-    /* Layout */
     .container {
-      max-width: var(--max-width);
+      max-width: var(--container-width);
       margin: 0 auto;
       padding: 0 1.5rem;
     }
 
     section {
-      padding: 4.5rem 0;
+      padding: 5rem 0;
+      position: relative;
     }
 
-    @media (min-width: 992px) {
-      section {
-        padding: 5.5rem 0;
-      }
+    .section-heading {
+      text-align: center;
+      margin-bottom: 1.5rem;
     }
 
-    .section-title {
+    .section-heading h2 {
       font-family: var(--font-heading);
       font-size: clamp(2rem, 3vw, 2.5rem);
-      margin-bottom: 1rem;
-      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
     }
 
-    .section-title span {
-      background: linear-gradient(90deg, var(--mm-orange), var(--mm-red));
-      -webkit-background-clip: text;
-      color: transparent;
+    .section-heading span.accent {
+      color: var(--brand-orange);
     }
 
     .section-subtitle {
-      font-family: var(--font-sub);
-      font-size: 1.05rem;
-      color: #d0d0d0;
-      max-width: 640px;
-      margin: 0 auto 2.5rem;
       text-align: center;
+      max-width: 640px;
+      margin: 0.5rem auto 2.5rem;
+      color: var(--text-muted);
+      font-size: 0.98rem;
     }
 
-    /* Header */
-    .header {
+    /* HEADER */
+    header {
       position: sticky;
       top: 0;
       z-index: 50;
+      background: rgba(0, 0, 0, 0.86);
       backdrop-filter: blur(16px);
-      background: rgba(5, 5, 10, 0.9);
-      border-bottom: 1px solid rgba(245, 245, 245, 0.05);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
     }
 
     .nav {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 0.8rem 1.5rem;
-      max-width: var(--max-width);
-      margin: 0 auto;
+      padding: 0.85rem 0;
     }
 
-    .logo-wrap {
+    .logo {
       display: flex;
       align-items: center;
       gap: 0.6rem;
     }
 
-    .logo-wrap img {
-      height: 52px;
+    .logo img {
+      height: 48px;
       width: auto;
     }
 
-    .logo-text-main {
-      font-family: var(--font-heading);
-      font-weight: 800;
-      letter-spacing: 0.04em;
-      font-size: 1.1rem;
+    .logo-text {
+      display: flex;
+      flex-direction: column;
     }
 
-    .logo-text-sub {
-      font-family: var(--font-sub);
-      font-size: 0.7rem;
+    .logo-text span:first-child {
+      font-family: var(--font-heading);
+      font-weight: 700;
+      font-size: 1.1rem;
+      letter-spacing: 0.18em;
       text-transform: uppercase;
-      color: #d0d0d0;
+    }
+
+    .logo-text span:last-child {
+      font-size: 0.72rem;
+      color: var(--brand-gray);
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
     }
 
     .nav-menu {
@@ -160,26 +161,24 @@
       align-items: center;
       gap: 1.75rem;
       list-style: none;
+      font-family: var(--font-sub);
+      font-size: 0.9rem;
     }
 
     .nav-menu a {
-      font-family: var(--font-sub);
-      font-size: 0.9rem;
-      letter-spacing: 0.03em;
-      text-transform: uppercase;
-      color: #f0f0f0;
       position: relative;
+      color: #f3f3f3;
     }
 
     .nav-menu a::after {
-      content: "";
+      content: '';
       position: absolute;
       left: 0;
       bottom: -4px;
       width: 0;
       height: 2px;
-      background: linear-gradient(90deg, var(--mm-orange), var(--mm-red));
-      transition: width var(--transition-fast);
+      background: linear-gradient(90deg, var(--brand-orange), var(--brand-red));
+      transition: width 0.2s ease-out;
     }
 
     .nav-menu a:hover::after {
@@ -187,889 +186,802 @@
     }
 
     .nav-cta {
-      display: flex;
+      display: inline-flex;
       align-items: center;
-      gap: 0.75rem;
+      gap: 0.4rem;
+      padding: 0.55rem 1.3rem;
+      border-radius: 999px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      background: linear-gradient(135deg, var(--brand-orange), var(--brand-red));
+      box-shadow: 0 8px 26px rgba(246, 113, 16, 0.55);
     }
 
-    .nav-cta .btn {
-      font-size: 0.85rem;
-      padding: 0.55rem 1.2rem;
+    .nav-cta span.icon {
+      font-size: 1rem;
     }
 
     .menu-toggle {
       display: none;
       flex-direction: column;
-      gap: 5px;
-      background: transparent;
+      gap: 4px;
       border: none;
+      background: transparent;
       cursor: pointer;
     }
 
     .menu-toggle span {
       width: 22px;
       height: 2px;
-      background: #f5f5f5;
-      border-radius: 10px;
-      transition: transform 0.25s ease, opacity 0.25s ease;
-    }
-
-    /* Buttons */
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      font-family: var(--font-sub);
-      font-weight: 600;
+      background: #ffffff;
       border-radius: 999px;
-      border: 1px solid transparent;
-      padding: 0.85rem 1.7rem;
-      font-size: 0.95rem;
-      cursor: pointer;
-      transition: background var(--transition), color var(--transition),
-        box-shadow var(--transition), transform var(--transition-fast), border-color var(--transition);
-      text-align: center;
-      gap: 0.4rem;
-      white-space: nowrap;
-    }
-
-    .btn-primary {
-      background: linear-gradient(135deg, var(--mm-orange), var(--mm-red));
-      color: #0b0b0f;
-      box-shadow: 0 12px 30px rgba(246, 133, 14, 0.45);
-    }
-
-    .btn-primary:hover {
-      transform: translateY(-1px);
-      box-shadow: 0 18px 40px rgba(246, 133, 14, 0.6);
-    }
-
-    .btn-outline {
-      background: transparent;
-      color: #f5f5f5;
-      border-color: rgba(245, 245, 245, 0.25);
-    }
-
-    .btn-outline:hover {
-      background: rgba(245, 245, 245, 0.08);
-      border-color: #ffffff;
+      transition: all 0.25s ease;
     }
 
     /* HERO */
     .hero {
-      padding: 5rem 0 4rem;
+      padding: 4.5rem 0 4rem;
     }
 
-    .hero-grid {
+    .hero-inner {
       display: grid;
+      grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr);
       gap: 3rem;
       align-items: center;
     }
 
-    @media (min-width: 900px) {
-      .hero-grid {
-        grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
-      }
-    }
-
-    .badge {
+    .hero-badge {
       display: inline-flex;
       align-items: center;
       gap: 0.45rem;
-      padding: 0.35rem 0.9rem;
+      padding: 0.4rem 0.9rem;
       border-radius: 999px;
-      border: 1px solid rgba(245, 245, 245, 0.2);
-      background: rgba(10, 10, 16, 0.85);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      background: rgba(10, 10, 10, 0.9);
       font-size: 0.75rem;
-      font-family: var(--font-sub);
-      letter-spacing: 0.06em;
       text-transform: uppercase;
-      margin-bottom: 1.1rem;
-      color: #f5f5f5;
+      letter-spacing: 0.16em;
+      color: var(--brand-gray);
+      margin-bottom: 1rem;
     }
 
-    .badge span.icon {
-      font-size: 0.9rem;
+    .hero-badge span.dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 999px;
+      background: radial-gradient(circle at 30% 0%, #ffffff, var(--brand-orange));
+      box-shadow: 0 0 12px rgba(247, 127, 0, 0.8);
     }
 
     .hero-title {
       font-family: var(--font-heading);
-      font-size: clamp(2.4rem, 4vw, 3.1rem);
-      line-height: 1.12;
+      font-size: clamp(2.6rem, 4vw, 3.2rem);
+      line-height: 1.1;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
       margin-bottom: 1.1rem;
     }
 
-    .hero-title span.gradient {
-      background: linear-gradient(90deg, var(--mm-orange), var(--mm-red));
+    .hero-title span.accent {
+      background: linear-gradient(135deg, var(--brand-orange), var(--brand-red));
       -webkit-background-clip: text;
+      background-clip: text;
       color: transparent;
     }
 
-    .hero-text p {
-      font-size: 1.05rem;
-      color: #d6d6d6;
-      margin-bottom: 1.75rem;
-      max-width: 36rem;
+    .hero-subtitle {
+      font-size: 1rem;
+      max-width: 520px;
+      color: var(--brand-gray);
+      margin-bottom: 1.7rem;
     }
 
-    .hero-text ul {
-      list-style: none;
-      margin-bottom: 2rem;
-    }
-
-    .hero-text li {
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-      font-size: 0.95rem;
-      color: #e4e4e4;
-      margin-bottom: 0.3rem;
-    }
-
-    .hero-text li span.bullet {
-      width: 18px;
-      height: 18px;
-      border-radius: 999px;
-      background: rgba(214, 40, 40, 0.15);
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 0.75rem;
-      color: var(--mm-orange);
-    }
-
-    .hero-cta {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.9rem;
-      align-items: center;
-    }
-
-    .hero-subnote {
-      font-size: 0.82rem;
-      color: #a8a8a8;
-      margin-top: 0.4rem;
-    }
-
-    .hero-right {
-      position: relative;
-    }
-
-    .hero-card {
-      background: radial-gradient(circle at top left, rgba(247, 127, 0, 0.18), rgba(11, 11, 15, 0.95));
-      border-radius: var(--radius-lg);
-      padding: 1.75rem;
-      border: 1px solid rgba(245, 245, 245, 0.06);
-      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
-    }
-
-    .hero-card-header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      margin-bottom: 1.2rem;
-    }
-
-    .hero-card-title {
-      font-family: var(--font-sub);
-      font-size: 0.9rem;
-      color: #f5f5f5;
-    }
-
-    .hero-card-pill {
-      font-size: 0.8rem;
-      padding: 0.25rem 0.7rem;
-      border-radius: 999px;
-      background: rgba(0, 0, 0, 0.45);
-      border: 1px solid rgba(245, 245, 245, 0.17);
-      color: #f8f8f8;
+    .hero-subtitle strong {
+      color: #ffffff;
+      font-weight: 600;
     }
 
     .hero-stats {
       display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
       gap: 1rem;
-      margin-bottom: 1.3rem;
-    }
-
-    @media (min-width: 480px) {
-      .hero-stats {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-      }
+      margin-bottom: 2rem;
     }
 
     .hero-stat {
+      background: radial-gradient(circle at top left, rgba(246, 133, 27, 0.18), rgba(7, 7, 7, 0.95));
       border-radius: var(--radius-md);
-      padding: 0.9rem 0.95rem;
-      background: rgba(8, 8, 14, 0.9);
-      border: 1px solid rgba(245, 245, 245, 0.06);
+      padding: 0.9rem 0.9rem;
+      border: 1px solid rgba(255, 255, 255, 0.08);
     }
 
-    .hero-stat-label {
-      font-size: 0.75rem;
-      color: #b3b3b3;
-      margin-bottom: 0.2rem;
-    }
-
-    .hero-stat-value {
+    .hero-stat span.value {
+      display: block;
       font-family: var(--font-heading);
       font-size: 1.15rem;
+      color: var(--brand-orange);
+    }
+
+    .hero-stat span.label {
+      font-size: 0.75rem;
+      color: var(--brand-gray);
+    }
+
+    .hero-cta-row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.4rem;
+      padding: 0.8rem 1.6rem;
+      border-radius: 999px;
+      font-family: var(--font-sub);
+      font-weight: 600;
+      font-size: 0.92rem;
+      border: 1px solid transparent;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--brand-orange), var(--brand-red));
+      color: #ffffff;
+      box-shadow: 0 10px 32px rgba(246, 133, 27, 0.6);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 36px rgba(246, 133, 27, 0.75);
+    }
+
+    .btn-outline {
+      background: transparent;
+      color: var(--brand-gray);
+      border-color: rgba(255, 255, 255, 0.22);
+    }
+
+    .btn-outline:hover {
+      border-color: var(--brand-orange);
       color: #ffffff;
     }
 
-    .hero-card-footer {
+    .btn .icon {
+      font-size: 1.1rem;
+    }
+
+    .hero-note {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    .hero-note span {
+      color: var(--brand-orange);
+    }
+
+    .hero-visual {
+      background: radial-gradient(circle at top left, rgba(246, 133, 27, 0.1), rgba(5, 5, 7, 0.98));
+      border-radius: var(--radius-lg);
+      padding: 1.6rem;
+      box-shadow: var(--shadow-soft);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      position: relative;
+      overflow: hidden;
+      min-height: 280px;
       display: flex;
+      flex-direction: column;
       justify-content: space-between;
-      align-items: center;
-      font-size: 0.8rem;
-      color: #c9c9c9;
-      margin-top: 0.5rem;
+      gap: 1rem;
     }
 
-    .hero-tagline {
-      margin-top: 1.6rem;
-      font-size: 0.9rem;
-      color: #bfbfbf;
-      display: flex;
-      align-items: center;
-      gap: 0.35rem;
-      flex-wrap: wrap;
-    }
-
-    .hero-tagline span.dot {
-      width: 5px;
-      height: 5px;
-      border-radius: 999px;
-      background: var(--mm-orange);
-    }
-
-    .trusted-strip {
-      margin-top: 2.2rem;
-      padding-top: 1rem;
-      border-top: 1px solid rgba(245, 245, 245, 0.06);
-      font-size: 0.8rem;
-      color: #909090;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.7rem;
-      align-items: center;
-    }
-
-    .trusted-strip span.label {
+    .hero-visual-tag {
+      font-size: 0.72rem;
       text-transform: uppercase;
-      letter-spacing: 0.08em;
-      font-family: var(--font-sub);
-      font-size: 0.75rem;
-      color: #b3b3b3;
+      letter-spacing: 0.16em;
+      color: var(--brand-gray);
+      margin-bottom: 0.6rem;
+    }
+
+    .hero-visual-main {
+      background: rgba(0, 0, 0, 0.8);
+      border-radius: 12px;
+      padding: 1rem;
+      border: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .hero-visual-main h3 {
+      font-family: var(--font-heading);
+      font-size: 0.95rem;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      margin-bottom: 0.4rem;
+      color: var(--brand-gray);
+    }
+
+    .hero-visual-main p {
+      font-size: 0.86rem;
+      color: var(--brand-gray);
+    }
+
+    .hero-visual-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 0.75rem;
+    }
+
+    .hero-visual-badge {
+      font-size: 0.76rem;
+      padding: 0.35rem 0.7rem;
+      border-radius: 999px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      background: rgba(255, 255, 255, 0.03);
+    }
+
+    .trusted-row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.8rem;
+      margin-top: 1.3rem;
+    }
+
+    .trusted-row span {
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--brand-gray);
     }
 
     .trusted-logos {
       display: flex;
-      flex-wrap: wrap;
-      gap: 0.75rem;
-      align-items: center;
+      gap: 0.5rem;
+      opacity: 0.75;
+      font-size: 0.78rem;
+      color: var(--brand-gray);
     }
 
-    .trusted-pill {
-      padding: 0.2rem 0.6rem;
-      border-radius: 999px;
-      border: 1px solid rgba(245, 245, 245, 0.12);
-      font-size: 0.75rem;
-      color: #d8d8d8;
-      background: rgba(8, 8, 14, 0.75);
-    }
-
-    /* Problem Section */
+    /* PROBLEMA */
     .problem {
-      background: radial-gradient(circle at top, rgba(214, 40, 40, 0.1), transparent 60%);
+      background: radial-gradient(circle at top, #1c1c1c 0, #050509 55%);
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
     }
 
-    .problem-grid {
+    .problem-inner {
       display: grid;
+      grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
       gap: 2.5rem;
-    }
-
-    @media (min-width: 900px) {
-      .problem-grid {
-        grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
-        align-items: center;
-      }
-    }
-
-    .problem-title {
-      font-family: var(--font-heading);
-      font-size: clamp(1.8rem, 3vw, 2.2rem);
-      margin-bottom: 1rem;
-    }
-
-    .problem-text p {
-      color: #dcdcdc;
-      margin-bottom: 0.9rem;
-      font-size: 0.98rem;
-    }
-
-    .problem-list {
-      display: grid;
-      gap: 1.3rem;
-      margin-top: 1.5rem;
-    }
-
-    .problem-block h3 {
-      font-family: var(--font-sub);
-      font-size: 0.98rem;
-      margin-bottom: 0.4rem;
-      color: #ffffff;
-    }
-
-    .problem-block ul {
-      list-style: none;
-      padding-left: 0;
-    }
-
-    .problem-block li {
-      font-size: 0.9rem;
-      color: #c4c4c4;
-      display: flex;
-      gap: 0.35rem;
       align-items: flex-start;
     }
 
-    .problem-block li::before {
-      content: "•";
-      color: var(--mm-orange);
-      margin-top: 0.05rem;
-      font-size: 1.1rem;
-    }
-
-    .problem-card {
-      background: rgba(10, 10, 16, 0.9);
-      border-radius: var(--radius-lg);
-      padding: 1.7rem;
-      border: 1px solid rgba(245, 245, 245, 0.07);
-      box-shadow: 0 18px 50px rgba(0, 0, 0, 0.7);
-    }
-
-    .problem-card-title {
-      font-family: var(--font-sub);
-      font-size: 0.95rem;
-      letter-spacing: 0.06em;
+    .problem-text h2 {
+      font-family: var(--font-heading);
+      font-size: 1.8rem;
       text-transform: uppercase;
-      color: #f0f0f0;
+      letter-spacing: 0.08em;
       margin-bottom: 1rem;
     }
 
-    .problem-card-metric {
+    .problem-text h2 span {
+      color: var(--brand-orange);
+    }
+
+    .problem-text p {
+      font-size: 0.98rem;
+      color: var(--brand-gray);
+      margin-bottom: 0.8rem;
+    }
+
+    .pill-list {
       display: flex;
-      justify-content: space-between;
+      flex-direction: column;
+      gap: 0.5rem;
+      margin-top: 0.8rem;
+    }
+
+    .pill {
+      display: inline-flex;
       align-items: center;
-      margin-bottom: 0.7rem;
-      font-size: 0.9rem;
-      color: #dcdcdc;
-    }
-
-    .problem-card-metric span.value {
-      font-family: var(--font-heading);
-      font-size: 1.15rem;
-      color: var(--mm-orange);
-    }
-
-    .problem-card-note {
+      gap: 0.5rem;
+      padding: 0.45rem 0.8rem;
+      border-radius: 999px;
+      background: rgba(0, 0, 0, 0.7);
+      border: 1px solid rgba(255, 255, 255, 0.06);
       font-size: 0.82rem;
-      color: #aaaaaa;
-      margin-top: 0.7rem;
+      color: var(--brand-gray);
+      max-width: 380px;
     }
 
-    /* Services */
+    .pill span.bullet {
+      width: 16px;
+      height: 16px;
+      border-radius: 999px;
+      background: linear-gradient(135deg, var(--brand-orange), var(--brand-red));
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.8rem;
+    }
+
+    .problem-benefits {
+      background: rgba(0, 0, 0, 0.85);
+      border-radius: var(--radius-lg);
+      padding: 1.5rem;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .problem-benefits h3 {
+      font-family: var(--font-heading);
+      font-size: 1.05rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .problem-benefits ul {
+      list-style: none;
+      display: grid;
+      gap: 0.4rem;
+      font-size: 0.9rem;
+      color: var(--brand-gray);
+    }
+
+    .problem-benefits ul li::before {
+      content: '• ';
+      color: var(--brand-orange);
+    }
+
+    /* SERVICIOS */
     .services {
-      background: #07070c;
+      background: #050509;
     }
 
     .services-grid {
       display: grid;
-      gap: 1.8rem;
-    }
-
-    @media (min-width: 900px) {
-      .services-grid {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-      }
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1.75rem;
     }
 
     .service-card {
-      background: radial-gradient(circle at top left, rgba(247, 127, 0, 0.12), #090912);
+      background: radial-gradient(circle at top left, rgba(214, 40, 40, 0.16), rgba(5, 5, 7, 0.98));
       border-radius: var(--radius-lg);
-      padding: 1.9rem 1.6rem;
-      border: 1px solid rgba(245, 245, 245, 0.06);
-      display: flex;
-      flex-direction: column;
-      gap: 0.9rem;
-      box-shadow: 0 16px 45px rgba(0, 0, 0, 0.75);
+      padding: 1.7rem 1.5rem;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      box-shadow: var(--shadow-card);
       position: relative;
       overflow: hidden;
     }
 
     .service-card::before {
-      content: "";
+      content: '';
       position: absolute;
-      width: 70px;
-      height: 4px;
-      border-radius: 999px;
-      background: linear-gradient(90deg, var(--mm-orange), var(--mm-red));
-      top: 0;
-      left: 1.6rem;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(214, 40, 40, 0.07), rgba(0, 0, 0, 0.9));
+      mix-blend-mode: screen;
+      opacity: 0;
+      transition: opacity 0.2s ease;
+    }
+
+    .service-card:hover::before {
+      opacity: 1;
     }
 
     .service-icon {
-      font-size: 1.6rem;
-    }
-
-    .service-title {
-      font-family: var(--font-heading);
+      width: 40px;
+      height: 40px;
+      border-radius: 12px;
+      background: rgba(0, 0, 0, 0.8);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1rem;
       font-size: 1.2rem;
     }
 
-    .service-text {
-      font-size: 0.94rem;
-      color: #e1e1e1;
+    .service-card h3 {
+      font-family: var(--font-heading);
+      font-size: 1.1rem;
+      margin-bottom: 0.6rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
     }
 
-    .service-list {
+    .service-card p {
+      font-size: 0.92rem;
+      color: var(--brand-gray);
+      margin-bottom: 1rem;
+    }
+
+    .service-features {
       list-style: none;
-      font-size: 0.9rem;
-      color: #d3d3d3;
-    }
-
-    .service-list li {
-      display: flex;
-      gap: 0.4rem;
-      align-items: flex-start;
-      margin-bottom: 0.35rem;
-    }
-
-    .service-list li::before {
-      content: "✓";
-      color: var(--mm-orange);
-      font-size: 0.95rem;
-      margin-top: 0.05rem;
-    }
-
-    /* Results */
-    .results {
-      background: radial-gradient(circle at top, rgba(247, 127, 0, 0.16), #050509);
-    }
-
-    .results-stats {
+      font-size: 0.86rem;
+      color: var(--brand-gray);
       display: grid;
-      gap: 1.6rem;
+      gap: 0.35rem;
+    }
+
+    .service-features li::before {
+      content: '✓ ';
+      color: var(--brand-orange);
+      font-weight: 600;
+    }
+
+    /* RESULTADOS */
+    .results {
+      background: radial-gradient(circle at center, #121212 0, #050509 55%);
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
+    }
+
+    .results-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1.5rem;
       margin-bottom: 2.5rem;
     }
 
-    @media (min-width: 768px) {
-      .results-stats {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-      }
-    }
-
     .result-card {
-      background: rgba(10, 10, 16, 0.95);
+      background: rgba(0, 0, 0, 0.9);
       border-radius: var(--radius-lg);
-      padding: 1.8rem 1.5rem;
-      border: 1px solid rgba(245, 245, 245, 0.08);
+      padding: 1.6rem 1.3rem;
+      border: 1px solid rgba(255, 255, 255, 0.08);
       text-align: center;
-      box-shadow: 0 18px 48px rgba(0, 0, 0, 0.7);
     }
 
     .result-value {
       font-family: var(--font-heading);
-      font-size: 2rem;
-      margin-bottom: 0.35rem;
-      background: linear-gradient(90deg, var(--mm-orange), var(--mm-red));
-      -webkit-background-clip: text;
-      color: transparent;
+      font-size: 2.1rem;
+      color: var(--brand-orange);
     }
 
     .result-label {
-      font-size: 0.93rem;
-      color: #dedede;
-    }
-
-    .result-note {
       font-size: 0.9rem;
-      color: #cfcfcf;
-      max-width: 580px;
-      margin: 0 auto;
-      text-align: center;
+      color: var(--brand-gray);
     }
 
-    /* Process */
+    .results-note {
+      text-align: center;
+      font-size: 0.9rem;
+      color: var(--brand-gray);
+    }
+
+    /* PROCESO */
     .process {
-      background: #06060b;
+      background: #050509;
     }
 
     .process-steps {
       display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
       gap: 1.5rem;
+      margin-top: 1rem;
     }
 
-    @media (min-width: 900px) {
-      .process-steps {
-        grid-template-columns: repeat(4, minmax(0, 1fr));
-      }
-    }
-
-    .step-card {
-      background: rgba(10, 10, 16, 0.95);
+    .process-step {
+      background: radial-gradient(circle at top, rgba(247, 127, 0, 0.14), rgba(5, 5, 5, 0.96));
       border-radius: var(--radius-lg);
-      padding: 1.6rem 1.4rem;
-      border: 1px solid rgba(245, 245, 245, 0.07);
+      padding: 1.5rem 1.2rem;
+      text-align: left;
+      border: 1px solid rgba(255, 255, 255, 0.07);
       position: relative;
-      box-shadow: 0 14px 40px rgba(0, 0, 0, 0.75);
     }
 
-    .step-number {
+    .process-step span.step-number {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
       width: 32px;
       height: 32px;
       border-radius: 999px;
-      background: linear-gradient(135deg, var(--mm-orange), var(--mm-red));
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-family: var(--font-heading);
-      color: #050509;
-      font-size: 1rem;
-      margin-bottom: 0.7rem;
-    }
-
-    .step-title {
-      font-family: var(--font-sub);
-      font-size: 1rem;
-      margin-bottom: 0.4rem;
-    }
-
-    .step-text {
+      border: 1px solid rgba(255, 255, 255, 0.18);
       font-size: 0.9rem;
-      color: #d6d6d6;
+      margin-bottom: 0.8rem;
+      background: rgba(0, 0, 0, 0.8);
     }
 
-    /* Why us */
-    .why {
-      background: #050509;
+    .process-step h3 {
+      font-family: var(--font-heading);
+      font-size: 0.98rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      margin-bottom: 0.5rem;
     }
 
-    .why-grid {
+    .process-step p {
+      font-size: 0.86rem;
+      color: var(--brand-gray);
+    }
+
+    /* WHY US */
+    .why-us {
+      background: radial-gradient(circle at top, #1a1a1a 0, #050509 48%);
+    }
+
+    .why-inner {
       display: grid;
+      grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
       gap: 2.5rem;
-    }
-
-    @media (min-width: 900px) {
-      .why-grid {
-        grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr);
-        align-items: center;
-      }
+      align-items: center;
     }
 
     .why-list {
       list-style: none;
       display: grid;
-      gap: 1rem;
+      gap: 0.7rem;
+      font-size: 0.94rem;
+      color: var(--brand-gray);
     }
 
-    .why-item {
+    .why-list li {
       display: flex;
+      gap: 0.6rem;
       align-items: flex-start;
-      gap: 0.8rem;
-      padding: 1rem 1rem;
-      border-radius: var(--radius-md);
-      border: 1px solid rgba(245, 245, 245, 0.06);
-      background: rgba(9, 9, 15, 0.95);
     }
 
-    .why-icon {
-      font-size: 1.2rem;
+    .why-list li span.icon {
+      width: 22px;
+      height: 22px;
+      border-radius: 999px;
+      background: rgba(214, 40, 40, 0.1);
+      border: 1px solid rgba(214, 40, 40, 0.6);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.9rem;
+      color: var(--brand-orange);
       margin-top: 0.1rem;
     }
 
-    .why-text-title {
-      font-family: var(--font-sub);
-      font-size: 0.98rem;
-      margin-bottom: 0.25rem;
-    }
-
-    .why-text-body {
-      font-size: 0.9rem;
-      color: #d0d0d0;
-    }
-
-    .bio-card {
-      background: radial-gradient(circle at top, rgba(214, 40, 40, 0.16), rgba(10, 10, 16, 0.98));
+    .why-card {
+      background: rgba(0, 0, 0, 0.9);
       border-radius: var(--radius-lg);
-      padding: 1.6rem 1.5rem;
-      border: 1px solid rgba(245, 245, 245, 0.1);
-      box-shadow: 0 16px 50px rgba(0, 0, 0, 0.75);
-    }
-
-    .bio-top {
-      display: flex;
-      align-items: center;
-      gap: 1rem;
-      margin-bottom: 0.8rem;
-    }
-
-    .bio-avatar {
-      width: 56px;
-      height: 56px;
-      border-radius: 999px;
-      overflow: hidden;
-      border: 2px solid rgba(247, 127, 0, 0.85);
-      background: #111;
-    }
-
-    .bio-name {
-      font-family: var(--font-heading);
-      font-size: 1rem;
-    }
-
-    .bio-role {
-      font-size: 0.8rem;
-      color: #e0e0e0;
-    }
-
-    .bio-text {
+      padding: 1.7rem 1.5rem;
+      border: 1px solid rgba(255, 255, 255, 0.08);
       font-size: 0.9rem;
-      color: #f0f0f0;
+      color: var(--brand-gray);
+    }
+
+    .why-card h3 {
+      font-family: var(--font-heading);
+      font-size: 1.05rem;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      margin-bottom: 0.6rem;
+    }
+
+    /* BIO / ABOUT */
+    .about {
+      background: #050509;
+    }
+
+    .about-inner {
+      display: grid;
+      grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+      gap: 2.2rem;
+      align-items: center;
+    }
+
+    .about-photo {
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      background: radial-gradient(circle at top, rgba(247, 127, 0, 0.18), rgba(0, 0, 0, 0.98));
+      min-height: 260px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .about-photo img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+
+    .about-text h3 {
+      font-family: var(--font-heading);
+      font-size: 1.25rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
       margin-bottom: 0.8rem;
     }
 
-    .bio-links {
+    .about-text p {
+      font-size: 0.94rem;
+      color: var(--brand-gray);
+      margin-bottom: 0.6rem;
+    }
+
+    .about-tags {
       display: flex;
-      gap: 0.7rem;
       flex-wrap: wrap;
-      font-size: 0.82rem;
-      color: #f5f5f5;
+      gap: 0.5rem;
+      margin-top: 0.6rem;
     }
 
-    .bio-links a {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.3rem;
-      padding: 0.2rem 0.6rem;
-      border-radius: 999px;
-      background: rgba(5, 5, 9, 0.7);
-      border: 1px solid rgba(245, 245, 245, 0.18);
+    .about-tag {
       font-size: 0.78rem;
+      padding: 0.3rem 0.7rem;
+      border-radius: 999px;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      color: var(--brand-gray);
     }
 
-    /* Testimonials */
+    /* TESTIMONIOS */
     .testimonials {
-      background: #06060d;
+      background: radial-gradient(circle at center, #171717 0, #050509 60%);
     }
 
     .testimonials-layout {
       display: grid;
-      gap: 2.2rem;
+      grid-template-columns: minmax(0, 1.4fr) minmax(0, 0.9fr);
+      gap: 2rem;
+      align-items: flex-start;
     }
 
-    @media (min-width: 900px) {
-      .testimonials-layout {
-        grid-template-columns: minmax(0, 1.4fr) minmax(0, 0.9fr);
-        align-items: center;
-      }
-    }
-
-    .testimonial-carousel {
-      background: radial-gradient(circle at top left, rgba(247, 127, 0, 0.16), #090912);
-      border-radius: var(--radius-lg);
-      padding: 1.6rem 1.5rem;
-      border: 1px solid rgba(245, 245, 245, 0.08);
-      box-shadow: 0 16px 48px rgba(0, 0, 0, 0.75);
+    .testimonial-slider {
       position: relative;
       overflow: hidden;
+      border-radius: var(--radius-lg);
+      border: 1px solid rgba(255, 255, 255, 0.09);
+      background: rgba(0, 0, 0, 0.9);
+      box-shadow: var(--shadow-card);
     }
 
-    .testimonial-slide {
-      display: none;
+    .testimonial-track {
+      display: flex;
+      transition: transform 0.4s ease;
     }
 
-    .testimonial-slide.active {
-      display: block;
-      animation: fadeIn 0.5s ease;
+    .testimonial-item {
+      min-width: 100%;
+      padding: 1.7rem 1.6rem 1.5rem;
     }
 
     .testimonial-quote {
-      font-size: 0.95rem;
-      color: #f5f5f5;
-      margin-bottom: 1rem;
+      font-size: 0.94rem;
+      color: var(--brand-gray);
+      margin-bottom: 0.9rem;
     }
 
     .testimonial-author {
       font-family: var(--font-sub);
       font-size: 0.9rem;
-      color: #f0f0f0;
+      font-weight: 600;
     }
 
-    .testimonial-role {
-      font-size: 0.8rem;
-      color: #c5c5c5;
+    .testimonial-author span {
+      font-size: 0.78rem;
+      color: var(--brand-gray);
+      font-weight: 400;
     }
 
     .testimonial-controls {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-top: 1.1rem;
+      padding: 0 1.6rem 1.3rem;
       font-size: 0.8rem;
-      color: #c0c0c0;
-    }
-
-    .testimonial-dots {
-      display: flex;
-      gap: 0.3rem;
-      align-items: center;
-    }
-
-    .testimonial-dot {
-      width: 8px;
-      height: 8px;
-      border-radius: 999px;
-      background: rgba(255, 255, 255, 0.25);
-      cursor: pointer;
-    }
-
-    .testimonial-dot.active {
-      background: linear-gradient(135deg, var(--mm-orange), var(--mm-red));
+      color: var(--brand-gray);
     }
 
     .testimonial-buttons {
       display: flex;
-      gap: 0.3rem;
+      gap: 0.4rem;
     }
 
     .testimonial-btn {
-      width: 28px;
-      height: 28px;
+      width: 30px;
+      height: 30px;
       border-radius: 999px;
-      border: 1px solid rgba(245, 245, 245, 0.3);
-      background: transparent;
-      color: #f5f5f5;
-      cursor: pointer;
-      font-size: 0.85rem;
-      display: flex;
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      background: rgba(0, 0, 0, 0.9);
+      display: inline-flex;
       align-items: center;
       justify-content: center;
-      transition: background var(--transition), border-color var(--transition);
+      cursor: pointer;
+      font-size: 0.9rem;
+      transition: all 0.2s ease;
     }
 
     .testimonial-btn:hover {
-      background: rgba(245, 245, 245, 0.12);
-      border-color: #ffffff;
+      border-color: var(--brand-orange);
+      color: var(--brand-orange);
     }
 
-    .testimonials-side {
+    .testimonials-aside {
+      background: rgba(0, 0, 0, 0.9);
+      border-radius: var(--radius-lg);
+      padding: 1.6rem 1.5rem;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      font-size: 0.9rem;
+      color: var(--brand-gray);
+    }
+
+    .testimonials-aside h3 {
+      font-family: var(--font-heading);
+      font-size: 1rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-bottom: 0.6rem;
+    }
+
+    .maps-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      margin-top: 0.8rem;
+      font-size: 0.85rem;
+      color: var(--brand-orange);
+    }
+
+    .maps-link span.icon {
+      font-size: 1rem;
+    }
+
+    /* PRICING */
+    .pricing {
+      background: #050509;
+    }
+
+    .pricing-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1.5rem;
+    }
+
+    .pricing-card {
+      background: rgba(0, 0, 0, 0.9);
+      border-radius: var(--radius-lg);
+      padding: 1.9rem 1.6rem;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      position: relative;
       display: flex;
       flex-direction: column;
       gap: 1rem;
     }
 
-    .testimonials-side p {
-      font-size: 0.9rem;
-      color: #dcdcdc;
+    .pricing-card.highlight {
+      border-color: var(--brand-orange);
+      box-shadow: 0 14px 40px rgba(246, 133, 27, 0.4);
     }
 
-    .gmaps-frame {
-      border-radius: var(--radius-md);
-      overflow: hidden;
-      border: 1px solid rgba(245, 245, 245, 0.15);
-      min-height: 220px;
-      background: #111;
-    }
-
-    .gmaps-link {
-      margin-top: 0.7rem;
-      font-size: 0.85rem;
-      color: #f5f5f5;
-    }
-
-    .gmaps-link a {
-      color: var(--mm-orange);
-      text-decoration: underline;
-    }
-
-    /* Pricing */
-    .pricing {
-      background: #07070d;
-    }
-
-    .pricing-grid {
-      display: grid;
-      gap: 1.6rem;
-    }
-
-    @media (min-width: 900px) {
-      .pricing-grid {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-      }
-    }
-
-    .pricing-card {
-      background: rgba(10, 10, 16, 0.95);
-      border-radius: var(--radius-lg);
-      padding: 1.9rem 1.6rem;
-      border: 1px solid rgba(245, 245, 245, 0.1);
-      box-shadow: 0 16px 45px rgba(0, 0, 0, 0.8);
-      display: flex;
-      flex-direction: column;
-      gap: 0.9rem;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .pricing-card.recommended {
-      border-color: var(--mm-orange);
-      box-shadow: 0 20px 60px rgba(247, 127, 0, 0.45);
-    }
-
-    .pricing-tag {
-      position: absolute;
-      top: 0.9rem;
-      right: 1.1rem;
-      font-size: 0.7rem;
-      padding: 0.25rem 0.6rem;
-      border-radius: 999px;
-      background: linear-gradient(135deg, var(--mm-orange), var(--mm-red));
-      color: #050509;
-      font-family: var(--font-sub);
-      letter-spacing: 0.05em;
-      text-transform: uppercase;
-    }
-
-    .pricing-name {
+    .pricing-label {
       font-family: var(--font-heading);
-      font-size: 1.2rem;
+      font-size: 0.88rem;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      color: var(--brand-gray);
+    }
+
+    .pricing-title {
+      font-family: var(--font-heading);
+      font-size: 1.25rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
     }
 
     .pricing-desc {
       font-size: 0.9rem;
-      color: #d4d4d4;
+      color: var(--brand-gray);
     }
 
-    .pricing-list {
+    .pricing-features {
       list-style: none;
-      font-size: 0.9rem;
-      color: #e0e0e0;
-      margin: 0.6rem 0 1rem;
+      display: grid;
+      gap: 0.4rem;
+      font-size: 0.86rem;
+      color: var(--brand-gray);
     }
 
-    .pricing-list li {
-      display: flex;
-      gap: 0.45rem;
-      align-items: flex-start;
-      margin-bottom: 0.35rem;
-    }
-
-    .pricing-list li::before {
-      content: "✓";
-      color: var(--mm-orange);
-      font-size: 0.95rem;
-      margin-top: 0.05rem;
+    .pricing-features li::before {
+      content: '✓ ';
+      color: var(--brand-orange);
+      font-weight: 600;
     }
 
     .pricing-cta {
@@ -1077,165 +989,104 @@
     }
 
     .pricing-note {
-      font-size: 0.85rem;
-      color: #c5c5c5;
+      margin-top: 2.5rem;
       text-align: center;
-      margin-top: 2rem;
+      font-size: 0.88rem;
+      color: var(--brand-gray);
     }
 
-    /* CTA Final */
-    .cta-final {
-      background: radial-gradient(circle at top, rgba(247, 127, 0, 0.22), #040408);
-      text-align: center;
-    }
-
-    .cta-final h2 {
-      font-family: var(--font-heading);
-      font-size: clamp(2rem, 3vw, 2.4rem);
-      margin-bottom: 1rem;
-    }
-
-    .cta-final p {
-      font-size: 0.98rem;
-      color: #e2e2e2;
-      max-width: 540px;
-      margin: 0 auto 1.8rem;
-    }
-
-    /* Contact */
+    /* CONTACTO */
     .contact {
-      background: #050509;
+      background: radial-gradient(circle at top, #202020 0, #050509 52%);
+    }
+
+    .contact-inner {
+      max-width: 720px;
+      margin: 0 auto;
+      text-align: center;
     }
 
     .contact-grid {
       display: grid;
-      gap: 1.8rem;
-    }
-
-    @media (min-width: 900px) {
-      .contact-grid {
-        grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
-      }
-    }
-
-    .contact-blocks {
-      display: grid;
-      gap: 1rem;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1.2rem;
+      margin: 2rem 0;
     }
 
     .contact-item {
-      display: flex;
-      align-items: center;
-      gap: 0.9rem;
-      padding: 1rem 1rem;
-      border-radius: var(--radius-md);
-      border: 1px solid rgba(245, 245, 245, 0.1);
-      background: rgba(9, 9, 16, 0.95);
-    }
-
-    .contact-icon {
-      font-size: 1.3rem;
-    }
-
-    .contact-label {
-      font-family: var(--font-sub);
-      font-size: 0.85rem;
-      color: #cfcfcf;
-    }
-
-    .contact-value {
-      font-size: 0.92rem;
-      color: #f5f5f5;
-    }
-
-    .contact-value a {
-      color: var(--mm-orange);
-      text-decoration: underline;
-    }
-
-    .contact-note {
-      font-size: 0.85rem;
-      color: #b8b8b8;
-      margin-top: 1.1rem;
-    }
-
-    .contact-right {
+      background: rgba(0, 0, 0, 0.9);
+      border-radius: var(--radius-lg);
+      padding: 1.2rem 1rem;
+      border: 1px solid rgba(255, 255, 255, 0.08);
       font-size: 0.9rem;
-      color: #d0d0d0;
+      color: var(--brand-gray);
     }
 
-    .social-links {
-      display: flex;
-      gap: 0.7rem;
-      margin-top: 1.1rem;
-      flex-wrap: wrap;
+    .contact-item span.icon {
+      display: inline-block;
+      margin-bottom: 0.5rem;
+      font-size: 1.2rem;
     }
 
-    .social-links a {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.35rem;
-      font-size: 0.85rem;
-      padding: 0.35rem 0.7rem;
-      border-radius: 999px;
-      border: 1px solid rgba(245, 245, 245, 0.16);
-      background: rgba(8, 8, 14, 0.9);
+    .contact-item strong {
+      display: block;
+      color: #ffffff;
+      margin-bottom: 0.2rem;
     }
 
-    /* Footer */
-    .footer {
-      background: #020205;
-      padding: 1.8rem 0;
-      border-top: 1px solid rgba(245, 245, 245, 0.06);
-    }
-
-    .footer-inner {
-      max-width: var(--max-width);
-      margin: 0 auto;
-      padding: 0 1.5rem;
+    /* FOOTER */
+    footer {
+      background: #000000;
+      border-top: 1px solid rgba(255, 255, 255, 0.05);
+      padding: 1.7rem 0;
+      text-align: center;
       font-size: 0.8rem;
-      color: #a5a5a5;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.5rem;
-      justify-content: space-between;
-      align-items: center;
+      color: var(--brand-gray);
     }
 
     .footer-tagline {
-      color: #e0e0e0;
-      font-size: 0.82rem;
+      margin-top: 0.2rem;
+      color: var(--brand-orange);
+      font-size: 0.78rem;
     }
 
-    /* WhatsApp Float */
+    .footer-socials {
+      margin-top: 0.7rem;
+      display: flex;
+      justify-content: center;
+      gap: 0.9rem;
+      font-size: 1.1rem;
+    }
+
+    /* WHATSAPP FLOAT */
     .whatsapp-float {
       position: fixed;
-      bottom: 24px;
-      right: 24px;
+      right: 18px;
+      bottom: 18px;
       width: 54px;
       height: 54px;
       border-radius: 999px;
-      background: #25d366;
-      color: #fff;
+      background: #25D366;
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 1.7rem;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
-      z-index: 60;
-      transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+      font-size: 1.8rem;
+      color: #ffffff;
+      box-shadow: 0 10px 28px rgba(37, 211, 102, 0.6);
+      z-index: 80;
+      transition: transform 0.18s ease, box-shadow 0.18s ease;
     }
 
     .whatsapp-float:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 14px 40px rgba(0, 0, 0, 0.85);
+      transform: translateY(-2px) scale(1.03);
+      box-shadow: 0 12px 36px rgba(37, 211, 102, 0.8);
     }
 
-    /* Animations */
+    /* ANIMATIONS */
     .fade-in {
       opacity: 0;
-      transform: translateY(20px);
-      transition: opacity 0.6s ease, transform 0.6s ease;
+      transform: translateY(18px);
+      transition: all 0.55s ease-out;
     }
 
     .fade-in.visible {
@@ -1243,287 +1094,757 @@
       transform: translateY(0);
     }
 
-    @keyframes fadeIn {
-      from {
-        opacity: 0;
-        transform: translateY(10px);
+    /* RESPONSIVE */
+    @media (max-width: 992px) {
+      .hero-inner,
+      .problem-inner,
+      .why-inner,
+      .testimonials-layout,
+      .about-inner {
+        grid-template-columns: minmax(0, 1fr);
       }
-      to {
-        opacity: 1;
-        transform: translateY(0);
+
+      .hero {
+        padding-top: 3.5rem;
+      }
+
+      .hero-stats {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .results-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+
+      .process-steps {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .services-grid,
+      .pricing-grid,
+      .contact-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
       }
     }
 
-    /* Responsive */
-    @media (max-width: 900px) {
+    @media (max-width: 768px) {
       .nav-menu {
         position: fixed;
-        top: 60px;
-        right: -100%;
+        inset: 60px 0 auto 0;
+        background: rgba(0, 0, 0, 0.98);
         flex-direction: column;
-        background: #050509;
-        width: 100%;
-        padding: 1.5rem 1.5rem 2rem;
-        border-top: 1px solid rgba(245, 245, 245, 0.08);
-        transition: right 0.3s ease;
+        align-items: center;
+        gap: 1.2rem;
+        padding: 1.4rem 0 1.8rem;
+        transform: translateY(-120%);
+        transition: transform 0.25s ease-out;
       }
 
       .nav-menu.active {
-        right: 0;
+        transform: translateY(0);
       }
 
       .menu-toggle {
         display: flex;
       }
 
-      .nav-cta {
-        margin-top: 1rem;
-        width: 100%;
-        justify-content: flex-start;
-        flex-wrap: wrap;
+      .hero-inner {
+        gap: 2.2rem;
       }
 
-      .nav-cta .btn {
-        width: 100%;
-        justify-content: center;
+      .hero-stats {
+        grid-template-columns: minmax(0, 1fr);
       }
 
-      .trusted-strip {
-        flex-direction: column;
-        align-items: flex-start;
+      .results-grid {
+        grid-template-columns: minmax(0, 1fr);
       }
 
-      .bio-top {
-        flex-direction: row;
-      }
-    }
-
-    @media (max-width: 600px) {
-      .hero {
-        padding-top: 4rem;
+      .process-steps {
+        grid-template-columns: minmax(0, 1fr);
       }
 
-      .hero-card {
-        margin-top: 1rem;
+      .services-grid,
+      .pricing-grid,
+      .contact-grid {
+        grid-template-columns: minmax(0, 1fr);
       }
 
-      .hero-cta {
-        flex-direction: column;
-        align-items: stretch;
-      }
-
-      .btn {
-        width: 100%;
+      section {
+        padding: 3.5rem 0;
       }
 
       .whatsapp-float {
         width: 50px;
         height: 50px;
         font-size: 1.5rem;
-        bottom: 18px;
-        right: 18px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .hero-title {
+        font-size: 2.2rem;
+      }
+
+      .hero-cta-row {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .btn {
+        width: 100%;
+        justify-content: center;
       }
     }
   </style>
 </head>
 <body>
   <!-- HEADER -->
-  <header class="header">
-    <nav class="nav">
-      <a href="#inicio" class="logo-wrap">
-        <img src="./assets/images/logo-metal-marketing.png" alt="Metal Marketing Logo" />
-      </a>
-
-      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-
-      <ul class="nav-menu" id="navMenu">
-        <li><a href="#problema">Problema</a></li>
-        <li><a href="#servicios">Servicios</a></li>
-        <li><a href="#resultados">Resultados</a></li>
-        <li><a href="#proceso">Proceso</a></li>
-        <li><a href="#planes">Planes</a></li>
-        <li><a href="#testimonios">Testimonios</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-        <li class="nav-cta">
-          <a class="btn btn-outline" href="https://calendly.com/metalmarketingagencia/30min" target="_blank" rel="noopener noreferrer">Agendar videollamada</a>
-          <a class="btn btn-primary" href="https://wa.me/5493515310015?text=Hola%20Metal%20Marketing%2C%20quiero%20mejorar%20el%20marketing%20de%20mi%20negocio.%20%C2%BFPodemos%20hablar%3F" target="_blank" rel="noopener noreferrer">Hablemos por WhatsApp</a>
-        </li>
-      </ul>
-    </nav>
+  <header>
+    <div class="container">
+      <nav class="nav">
+        <a href="#top" class="logo">
+          <!-- Reemplazá el src por tu logo -->
+          <img src="./assets/images/logo-metal-marketing.png" alt="Metal Marketing Logo">
+          <div class="logo-text">
+            <span>METAL MARKETING</span>
+            <span>FORJAMOS RESULTADOS</span>
+          </div>
+        </a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="#problema">Problema</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#resultados">Resultados</a></li>
+          <li><a href="#proceso">Proceso</a></li>
+          <li><a href="#planes">Planes</a></li>
+          <li><a href="#testimonios">Testimonios</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+          <li>
+            <a href="https://wa.me/5493515310015?text=Hola%20Metal%20Marketing%2C%20quiero%20mejorar%20el%20marketing%20de%20mi%20negocio.%20%C2%BFPodemos%20hablar%3F" target="_blank" class="nav-cta">
+              <span class="icon">💬</span>
+              <span>Hablá por WhatsApp</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <main id="inicio">
-    <!-- HERO -->
-    <section class="hero">
-      <div class="container hero-grid">
-        <div class="hero-text fade-in">
-          <div class="badge">
-            <span class="icon">⚙️</span>
+  <!-- HERO -->
+  <section class="hero" id="top">
+    <div class="container">
+      <div class="hero-inner fade-in">
+        <div>
+          <div class="hero-badge">
+            <span class="dot"></span>
             <span>Marketing digital · Performance · Argentina</span>
           </div>
           <h1 class="hero-title">
-            Forjamos <span class="gradient">resultados reales</span> para tu negocio
+            Forjamos <span class="accent">resultados reales</span> para tu negocio
           </h1>
-          <p>
-            Estrategias de marketing digital que generan consultas, clientes y ventas todos los días. Campañas en Meta Ads y Google Ads, embudos simples y automatizaciones que convierten.
+          <p class="hero-subtitle">
+            Estrategias de marketing digital que generan <strong>consultas, clientes y ventas todos los días</strong>.
+            Campañas en Meta Ads y Google Ads, embudos simples y automatizaciones que convierten.
           </p>
-          <ul>
-            <li><span class="bullet">✓</span>Más consultas por WhatsApp y formularios</li>
-            <li><span class="bullet">✓</span>Leads mejor calificados y listos para hablar con ventas</li>
-            <li><span class="bullet">✓</span>Resultados claros, medibles y sin humo</li>
-          </ul>
-          <div class="hero-cta">
-            <a class="btn btn-primary" href="https://wa.me/5493515310015?text=Hola%20Metal%20Marketing%2C%20quiero%20mejorar%20el%20marketing%20de%20mi%20negocio.%20%C2%BFPodemos%20hablar%3F" target="_blank" rel="noopener noreferrer">
-              Quiero más clientes para mi negocio
+          <div class="hero-stats">
+            <div class="hero-stat">
+              <span class="value">↓ 30–50%</span>
+              <span class="label">Reducción estimada de costo por lead</span>
+            </div>
+            <div class="hero-stat">
+              <span class="value">48 hs</span>
+              <span class="label">Puesta en marcha de campañas</span>
+            </div>
+            <div class="hero-stat">
+              <span class="value">+ Consultas</span>
+              <span class="label">Más mensajes y oportunidades reales</span>
+            </div>
+          </div>
+          <div class="hero-cta-row">
+            <a href="https://wa.me/5493515310015?text=Hola%20Metal%20Marketing%2C%20quiero%20mejorar%20el%20marketing%20de%20mi%20negocio.%20%C2%BFPodemos%20hablar%3F" target="_blank" class="btn btn-primary">
+              <span class="icon">🚀</span>
+              <span>Quiero más clientes para mi negocio</span>
             </a>
-            <a class="btn btn-outline" href="https://calendly.com/metalmarketingagencia/30min" target="_blank" rel="noopener noreferrer">
-              Agendar videollamada
+            <a href="https://calendly.com/metalmarketingagencia/30min" target="_blank" class="btn btn-outline">
+              <span class="icon">📅</span>
+              <span>Agendar videollamada</span>
             </a>
           </div>
-          <p class="hero-subnote">
-            Menos complicación técnica, más resultados concretos.
+          <p class="hero-note">
+            <span>Negocios y emprendedores en Argentina</span> confían en nuestro enfoque orientado a resultados.
           </p>
+        </div>
 
-          <div class="trusted-strip">
-            <span class="label">Confiaron en nosotros</span>
-            <div class="trusted-logos">
-              <span class="trusted-pill">Negocios locales</span>
-              <span class="trusted-pill">E-commerce</span>
-              <span class="trusted-pill">Profesionales y servicios</span>
+        <aside class="hero-visual">
+          <div>
+            <p class="hero-visual-tag">Panel de control · Performance</p>
+            <div class="hero-visual-main">
+              <h3>VISIÓN CLARA DE TUS RESULTADOS</h3>
+              <p>
+                No te hablamos de métricas vacías. Miramos lo que importa:
+                mensajes, leads, costo por resultado y oportunidades de venta.
+              </p>
+              <div class="hero-visual-badges">
+                <span class="hero-visual-badge">Meta Ads</span>
+                <span class="hero-visual-badge">Google Ads</span>
+                <span class="hero-visual-badge">WhatsApp</span>
+                <span class="hero-visual-badge">Embudo simple</span>
+              </div>
+            </div>
+          </div>
+          <div class="trusted-row">
+            <span>Hecho para negocios que quieren crecer en serio.</span>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROBLEMA -->
+  <section class="problem" id="problema">
+    <div class="container">
+      <div class="problem-inner fade-in">
+        <div class="problem-text">
+          <h2>Si tu negocio no recibe consultas,<br><span>el problema no es tu producto.</span></h2>
+          <p>
+            La mayoría de los negocios pierden clientes todos los días porque su publicidad
+            no está bien estructurada, sus mensajes no conectan o no tienen un sistema
+            que transforme visitas en consultas reales.
+          </p>
+          <p>
+            En Metal Marketing te ayudamos a cambiar eso con estrategias que funcionan
+            desde el día uno, sin complicaciones.
+          </p>
+          <div class="pill-list">
+            <div class="pill">
+              <span class="bullet">!</span>
+              <span>Te escriben pocos o ningún cliente por WhatsApp.</span>
+            </div>
+            <div class="pill">
+              <span class="bullet">!</span>
+              <span>Tus anuncios no convierten o son demasiado caros.</span>
+            </div>
+            <div class="pill">
+              <span class="bullet">!</span>
+              <span>No tenés un sistema para captar y calificar leads.</span>
+            </div>
+            <div class="pill">
+              <span class="bullet">!</span>
+              <span>Hacés marketing, pero no ves resultados reales.</span>
             </div>
           </div>
         </div>
+        <aside class="problem-benefits">
+          <h3>Lo que buscamos conseguir con vos</h3>
+          <ul>
+            <li>Más mensajes todos los días.</li>
+            <li>Clientes que sí están interesados.</li>
+            <li>Estrategias simples, claras y medibles.</li>
+            <li>Resultados sólidos, no promesas vacías.</li>
+          </ul>
+        </aside>
+      </div>
+    </div>
+  </section>
 
-        <div class="hero-right fade-in">
-          <div class="hero-card">
-            <div class="hero-card-header">
-              <div class="hero-card-title">Panel de resultados</div>
-              <div class="hero-card-pill">Marketing que forja resultados</div>
-            </div>
-            <div class="hero-stats">
-              <div class="hero-stat">
-                <div class="hero-stat-label">Reducción estimada de CPL</div>
-                <div class="hero-stat-value">↓ 30–50%</div>
-              </div>
-              <div class="hero-stat">
-                <div class="hero-stat-label">Lanzamiento de campañas</div>
-                <div class="hero-stat-value">48 hs</div>
-              </div>
-              <div class="hero-stat">
-                <div class="hero-stat-label">Consultas mensuales</div>
-                <div class="hero-stat-value">+ Leads</div>
-              </div>
-              <div class="hero-stat">
-                <div class="hero-stat-label">Estrategia</div>
-                <div class="hero-stat-value">Ads + Embudos</div>
-              </div>
-            </div>
-            <div class="hero-card-footer">
-              <span>Datos + creatividad = performance</span>
-              <span>Metal Marketing · 2025</span>
-            </div>
-            <div class="hero-tagline">
-              <span class="dot"></span>
-              <span>Trabajamos para que recibas clientes reales, no solo seguidores.</span>
-            </div>
-          </div>
+  <!-- SERVICIOS -->
+  <section class="services" id="servicios">
+    <div class="container">
+      <div class="section-heading fade-in">
+        <h2>Soluciones que <span class="accent">forjan resultados</span></h2>
+      </div>
+      <p class="section-subtitle fade-in">
+        Servicios pensados para algo simple: más consultas, más clientes y más ventas para tu negocio.
+      </p>
+
+      <div class="services-grid">
+        <article class="service-card fade-in">
+          <div class="service-icon">📊</div>
+          <h3>Campañas publicitarias</h3>
+          <p>
+            Creamos campañas orientadas a resultados: más mensajes, más leads y más ventas.
+            Administramos tu presupuesto de forma profesional y optimizamos todos los días.
+          </p>
+          <ul class="service-features">
+            <li>Meta Ads y Google Ads.</li>
+            <li>Segmentación por audiencias reales.</li>
+            <li>Creatividades de alto rendimiento.</li>
+            <li>Testing continuo y optimización diaria.</li>
+          </ul>
+        </article>
+
+        <article class="service-card fade-in">
+          <div class="service-icon">🧠</div>
+          <h3>Embudos & Automatizaciones</h3>
+          <p>
+            Conectamos tus campañas con embudos simples: landing pages, WhatsApp y email.
+            Todo diseñado para convertir visitas en clientes.
+          </p>
+          <ul class="service-features">
+            <li>Automatización de respuestas en WhatsApp/IG.</li>
+            <li>Calificación de leads según interés.</li>
+            <li>Secuencias de email automatizadas.</li>
+            <li>Landing pages enfocadas en conversión.</li>
+          </ul>
+        </article>
+
+        <article class="service-card fade-in">
+          <div class="service-icon">📈</div>
+          <h3>Estrategia & Consultoría</h3>
+          <p>
+            Reportes claros, decisiones basadas en datos y un plan continuo
+            para mejorar tus resultados y escalar tu inversión con seguridad.
+          </p>
+          <ul class="service-features">
+            <li>Reportes semanales o quincenales.</li>
+            <li>KPI clave: CPL, leads, conversiones.</li>
+            <li>Análisis por anuncio y audiencia.</li>
+            <li>Recomendaciones accionables de crecimiento.</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESULTADOS -->
+  <section class="results" id="resultados">
+    <div class="container">
+      <div class="section-heading fade-in">
+        <h2>Resultados que <span class="accent">hablan</span></h2>
+      </div>
+      <p class="section-subtitle fade-in">
+        Nuestro enfoque está pensado para que recibas clientes reales, no solo seguidores.
+      </p>
+
+      <div class="results-grid">
+        <div class="result-card fade-in">
+          <div class="result-value">↓ 30–50%</div>
+          <div class="result-label">Reducción estimada en costo por lead al optimizar las campañas.</div>
+        </div>
+        <div class="result-card fade-in">
+          <div class="result-value">+ Consultas</div>
+          <div class="result-label">Aumento de mensajes y formularios completados desde el primer mes.</div>
+        </div>
+        <div class="result-card fade-in">
+          <div class="result-value">48 hs</div>
+          <div class="result-label">Tiempo estimado de setup inicial de campañas y embudos.</div>
         </div>
       </div>
-    </section>
 
-    <!-- PROBLEM -->
-    <section id="problema" class="problem">
-      <div class="container problem-grid">
-        <div class="problem-text fade-in">
-          <h2 class="problem-title">
-            Si tu negocio no recibe consultas, el problema no es tu producto. Es tu marketing.
-          </h2>
-          <p>
-            La mayoría de los negocios pierden clientes todos los días porque su publicidad no está bien estructurada, sus mensajes no conectan o no tienen un sistema que transforme visitas en consultas reales.
-          </p>
-          <p>
-            En Metal Marketing te ayudamos a cambiar eso con estrategias que funcionan desde el día uno, sin complicaciones.
-          </p>
+      <p class="results-note fade-in">
+        Trabajamos con sistemas medibles: lo que no se mide, no se puede mejorar.
+      </p>
+    </div>
+  </section>
 
-          <div class="problem-list">
-            <div class="problem-block">
-              <h3>Probablemente hoy te pase esto:</h3>
-              <ul>
-                <li>Te escriben pocos o ningún cliente por WhatsApp.</li>
-                <li>Tus anuncios no convierten o son muy caros.</li>
-                <li>No tenés un sistema para captar y calificar leads.</li>
-                <li>Hacés marketing, pero no ves resultados reales.</li>
-              </ul>
-            </div>
-            <div class="problem-block">
-              <h3>Lo que podemos construir juntos:</h3>
-              <ul>
-                <li>Más mensajes todos los días.</li>
-                <li>Clientes que sí están interesados.</li>
-                <li>Estrategias simples, claras y medibles.</li>
-                <li>Resultados sólidos, no promesas vacías.</li>
-              </ul>
-            </div>
-          </div>
+  <!-- PROCESO -->
+  <section class="process" id="proceso">
+    <div class="container">
+      <div class="section-heading fade-in">
+        <h2>Un proceso simple para <span class="accent">avanzar rápido</span></h2>
+      </div>
+      <p class="section-subtitle fade-in">
+        Un proceso claro en 4 pasos para pasar de “quiero empezar a hacer marketing” a “estoy recibiendo clientes”.
+      </p>
+
+      <div class="process-steps">
+        <div class="process-step fade-in">
+          <span class="step-number">01</span>
+          <h3>Diagnóstico</h3>
+          <p>Conversamos 15–20 minutos para entender tu negocio, tu oferta, tu público y tus objetivos.</p>
         </div>
+        <div class="process-step fade-in">
+          <span class="step-number">02</span>
+          <h3>Estrategia</h3>
+          <p>Definimos la estructura de campañas, mensajes clave, creatividades y canales a utilizar.</p>
+        </div>
+        <div class="process-step fade-in">
+          <span class="step-number">03</span>
+          <h3>Lanzamiento</h3>
+          <p>Activamos las campañas conectadas a WhatsApp, landing pages o formularios, según tu modelo de negocio.</p>
+        </div>
+        <div class="process-step fade-in">
+          <span class="step-number">04</span>
+          <h3>Optimización</h3>
+          <p>Analizamos resultados, ajustamos campañas y planteamos cómo escalar de forma rentable.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-        <aside class="problem-card fade-in">
-          <div class="problem-card-title">De “improvisar” a tener un sistema</div>
-          <div class="problem-card-metric">
-            <span>Consultas irregulares</span>
-            <span class="value">❌</span>
+  <!-- POR QUÉ ELEGIRNOS -->
+  <section class="why-us">
+    <div class="container">
+      <div class="why-inner fade-in">
+        <div>
+          <div class="section-heading">
+            <h2>¿Por qué <span class="accent">Metal Marketing</span>?</h2>
           </div>
-          <div class="problem-card-metric">
-            <span>Campañas sin estrategia</span>
-            <span class="value">❌</span>
-          </div>
-          <div class="problem-card-metric">
-            <span>Embudo conectado a WhatsApp</span>
-            <span class="value">✓</span>
-          </div>
-          <div class="problem-card-metric">
-            <span>Medición y optimización</span>
-            <span class="value">✓</span>
-          </div>
-          <p class="problem-card-note">
-            Pasamos de “probar a ver qué pasa” a tener un sistema armado para atraer, convertir y escalar.
+          <ul class="why-list">
+            <li>
+              <span class="icon">⚙️</span>
+              <span>Estrategias sólidas, no improvisadas. Diseñamos sistemas que puedan medirse y mejorar.</span>
+            </li>
+            <li>
+              <span class="icon">🎯</span>
+              <span>Creatividades y mensajes pensados para convertir, no solo para “verse lindos”.</span>
+            </li>
+            <li>
+              <span class="icon">🤝</span>
+              <span>Atención personalizada, contacto directo y seguimiento cercano de tus campañas.</span>
+            </li>
+            <li>
+              <span class="icon">📊</span>
+              <span>Reportes claros, accionables y enfocados en métricas que importan.</span>
+            </li>
+            <li>
+              <span class="icon">⚡</span>
+              <span>Resultados medibles desde el primer mes y velocidad de implementación.</span>
+            </li>
+          </ul>
+        </div>
+        <aside class="why-card">
+          <h3>ENFOQUE EN PERFORMANCE</h3>
+          <p>
+            Nuestro trabajo no termina cuando los anuncios están activos. Recién ahí empieza el juego:
+            pruebas A/B, análisis de audiencias, embudos más simples y decisiones basadas en datos.
+          </p>
+          <p>
+            Metal Marketing existe para ayudarte a vender más y mejor, con un sistema que puedas
+            entender y controlar.
           </p>
         </aside>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- SERVICES -->
-    <section id="servicios" class="services">
-      <div class="container">
-        <h2 class="section-title"><span>Soluciones</span> diseñadas para generar resultados reales</h2>
+  <!-- ABOUT / BIO -->
+  <section class="about">
+    <div class="container">
+      <div class="about-inner fade-in">
+        <div class="about-photo">
+          <!-- Reemplaza esta imagen por tu foto (brazos cruzados, branding) -->
+          <img src="./assets/images/jonathan-metal-marketing.jpg" alt="Jonathan Pernia - Metal Marketing">
+        </div>
+        <div class="about-text">
+          <h3>DETRÁS DE LA ESTRATEGIA</h3>
+          <p>
+            Soy Jonathan Pernia, especialista en Paid Media y funnels orientados a resultados.
+            Llevo años ayudando a negocios, emprendedores y marcas a profesionalizar su marketing
+            con campañas claras, simples y medibles.
+          </p>
+          <p>
+            Trabajo con Meta Ads, Google Ads, embudos, automatizaciones y reportes,
+            siempre con el mismo objetivo: que tu inversión en marketing se traduzca en más consultas
+            y más ventas, no solo en “más alcance”.
+          </p>
+          <div class="about-tags">
+            <span class="about-tag">Meta Ads & Google Ads</span>
+            <span class="about-tag">Embudo & Automatización</span>
+            <span class="about-tag">Performance & Datos</span>
+            <span class="about-tag">Córdoba · Argentina</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIOS -->
+  <section class="testimonials" id="testimonios">
+    <div class="container">
+      <div class="section-heading fade-in">
+        <h2>Lo que dicen <span class="accent">nuestros clientes</span></h2>
+      </div>
+      <p class="section-subtitle fade-in">
+        Algunos testimonios reales de personas y empresas que confiaron en nuestro trabajo.
+      </p>
+
+      <div class="testimonials-layout">
+        <div class="testimonial-slider fade-in" id="testimonialSlider">
+          <div class="testimonial-track" id="testimonialTrack">
+            <!-- TESTIMONIO 1 -->
+            <div class="testimonial-item">
+              <p class="testimonial-quote">
+                “Súper contentas con los servicios prestados por Jonathan. Muy buena persona,
+                siempre muy bien predispuesto.”
+              </p>
+              <p class="testimonial-author">
+                Natalia Goni <span>· Cliente Metal Marketing</span>
+              </p>
+            </div>
+            <!-- TESTIMONIO 2 -->
+            <div class="testimonial-item">
+              <p class="testimonial-quote">
+                “Muy profesionales, excelente trato, la mejor decisión que tuve para mi empresa.”
+              </p>
+              <p class="testimonial-author">
+                Juan Salgado <span>· Cliente Metal Marketing</span>
+              </p>
+            </div>
+            <!-- TESTIMONIO 3 -->
+            <div class="testimonial-item">
+              <p class="testimonial-quote">
+                “Trabajamos juntos y lo recomiendo. Nos ayuda a crecer nuestro negocio.”
+              </p>
+              <p class="testimonial-author">
+                Solange Amil <span>· Cliente Metal Marketing</span>
+              </p>
+            </div>
+            <!-- TESTIMONIO 4 -->
+            <div class="testimonial-item">
+              <p class="testimonial-quote">
+                “Venimos trabajando con Jon hace poco menos de un año y logramos incrementar
+                notablemente casi todas las métricas en Meta Ads. Necesitábamos un mínimo de 100 consultas
+                diarias, a bajo costo y con leads calificados y lo estamos logrando. Muy conforme.”
+              </p>
+              <p class="testimonial-author">
+                Nico Costesich <span>· @flyingmuuar</span>
+              </p>
+            </div>
+            <!-- TESTIMONIO 5 -->
+            <div class="testimonial-item">
+              <p class="testimonial-quote">
+                “Un asesor y community manager espectacular, recomiendo el servicio de esta empresa.”
+              </p>
+              <p class="testimonial-author">
+                Leandro Loiero <span>· Cliente Metal Marketing</span>
+              </p>
+            </div>
+          </div>
+          <div class="testimonial-controls">
+            <span id="testimonialIndicator">1 / 5</span>
+            <div class="testimonial-buttons">
+              <button class="testimonial-btn" id="prevTestimonial" aria-label="Testimonio anterior">‹</button>
+              <button class="testimonial-btn" id="nextTestimonial" aria-label="Siguiente testimonio">›</button>
+            </div>
+          </div>
+        </div>
+
+        <aside class="testimonials-aside fade-in">
+          <h3>RESEÑAS EN GOOGLE MAPS</h3>
+          <p>
+            Además de estos testimonios, podés ver más reseñas reales de clientes que trabajaron con nosotros
+            y compartieron su experiencia en Google Maps.
+          </p>
+          <a href="https://maps.app.goo.gl/hQGw1XnXacSEvpFKA" target="_blank" class="maps-link">
+            <span class="icon">📍</span>
+            <span>Ver más reseñas en Google Maps</span>
+          </a>
+          <p style="margin-top: 0.9rem; font-size: 0.85rem;">
+            La mejor prueba de una estrategia que funciona es la experiencia de quienes ya confiaron
+            en ella.
+          </p>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- PLANES -->
+  <section class="pricing" id="planes">
+    <div class="container">
+      <div class="section-heading fade-in">
+        <h2>Planes diseñados para <span class="accent">crecer</span></h2>
+      </div>
+      <p class="section-subtitle fade-in">
+        Honorarios por gestión. La inversión publicitaria se paga directo en tu cuenta de anuncios.
+      </p>
+
+      <div class="pricing-grid">
+        <!-- STARTER -->
+        <article class="pricing-card fade-in">
+          <div>
+            <div class="pricing-label">Plan Starter</div>
+            <div class="pricing-title">Empezar bien</div>
+          </div>
+          <p class="pricing-desc">
+            Ideal para negocios que recién empiezan a pautar o quieren probar un canal a la vez.
+          </p>
+          <ul class="pricing-features">
+            <li>1 campaña en Meta o Google Ads.</li>
+            <li>Hasta 4 creatividades activas.</li>
+            <li>Reporte quincenal.</li>
+            <li>Soporte básico por WhatsApp.</li>
+          </ul>
+          <div class="pricing-cta">
+            <a href="https://calendly.com/metalmarketingagencia/30min" target="_blank" class="btn btn-outline" style="width: 100%;">Quiero este plan</a>
+          </div>
+        </article>
+
+        <!-- INTERMEDIO -->
+        <article class="pricing-card highlight fade-in">
+          <div>
+            <div class="pricing-label">Plan Intermedio</div>
+            <div class="pricing-title">Crecimiento constante</div>
+          </div>
+          <p class="pricing-desc">
+            Pensado para marcas que quieren volumen constante de consultas y un sistema más armado.
+          </p>
+          <ul class="pricing-features">
+            <li>1–2 campañas de anuncios en Meta y Google Ads.</li>
+            <li>Hasta 8 creatividades activas.</li>
+            <li>Reporte quincenal con recomendaciones.</li>
+            <li>Automatización básica WhatsApp/IG.</li>
+            <li>Landing page de captura incluida.</li>
+          </ul>
+          <div class="pricing-cta">
+            <a href="https://calendly.com/metalmarketingagencia/30min" target="_blank" class="btn btn-primary" style="width: 100%;">Elegir este plan</a>
+          </div>
+        </article>
+
+        <!-- AVANZADO -->
+        <article class="pricing-card fade-in">
+          <div>
+            <div class="pricing-label">Plan Avanzado</div>
+            <div class="pricing-title">Escala & Sistema</div>
+          </div>
+          <p class="pricing-desc">
+            Para negocios que buscan escalar, diversificar canales y profesionalizar su sistema de ventas.
+          </p>
+          <ul class="pricing-features">
+            <li>Meta Ads + Google Ads.</li>
+            <li>Hasta 12 creatividades activas.</li>
+            <li>Reporte semanal.</li>
+            <li>Automatizaciones avanzadas + CRM + secuencia de correos.</li>
+            <li>Soporte en armado de ofertas.</li>
+            <li>Sitio web y landing pages optimizadas.</li>
+          </ul>
+          <div class="pricing-cta">
+            <a href="https://calendly.com/metalmarketingagencia/30min" target="_blank" class="btn btn-outline" style="width: 100%;">Hablemos de este plan</a>
+          </div>
+        </article>
+      </div>
+
+      <p class="pricing-note fade-in">
+        Agendá una videollamada y definimos juntos el plan que mejor encaja con tu negocio.
+      </p>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section class="contact" id="contacto">
+    <div class="container">
+      <div class="contact-inner fade-in">
+        <div class="section-heading">
+          <h2>¿Listo para <span class="accent">forjar resultados</span>?</h2>
+        </div>
         <p class="section-subtitle">
-          No vendemos fórmulas mágicas. Construimos estrategias claras de publicidad, embudos y automatizaciones para que tu negocio reciba más consultas y clientes.
+          Contanos sobre tu negocio y te proponemos una estrategia de marketing enfocada en resultados,
+          no en métricas de ego.
         </p>
 
-        <div class="services-grid">
-          <article class="service-card fade-in">
-            <div class="service-icon">📣</div>
-            <h3 class="service-title">Campañas publicitarias (Meta Ads + Google Ads)</h3>
-            <p class="service-text">
-              Creamos campañas orientadas a resultados: más mensajes, más leads y más ventas. Administramos tu presupuesto de forma profesional y optimizamos todos los días.
-            </p>
-            <ul class="service-list">
-              <li>Meta Ads y Google Ads alineados a tus objetivos.</li>
-              <li>Segmentación por audiencias reales y datos.</li>
-              <li>Creatividades de alto rendimiento.</li>
-              <li>Testing continuo y optimización diaria.</li>
-            </ul>
-          </article>
+        <div class="contact-grid">
+          <div class="contact-item">
+            <span class="icon">📱</span>
+            <strong>WhatsApp</strong>
+            <a href="https://wa.me/5493515310015?text=Hola%20Metal%20Marketing%2C%20quiero%20mejorar%20el%20marketing%20de%20mi%20negocio.%20%C2%BFPodemos%20hablar%3F" target="_blank">
+              +54 9 351 5310015
+            </a>
+          </div>
+          <div class="contact-item">
+            <span class="icon">✉️</span>
+            <strong>Email</strong>
+            <a href="mailto:metalmarketingagencia@gmail.com">
+              metalmarketingagencia@gmail.com
+            </a>
+          </div>
+          <div class="contact-item">
+            <span class="icon">📍</span>
+            <strong>Ubicación</strong>
+            <span>Córdoba, Argentina</span>
+          </div>
+        </div>
 
-          <article class="service-card fade-in">
-            <div class="service-icon">🔗</div>
-            <h3 class="service-title">Embudos & automatizaciones</h3>
-            <p class="service-text">
-              Conectamos tus campañas con embudos simples pero efectivos: landing pages, WhatsApp y email. Todo diseñado para convertir visitas
+        <a href="https://wa.me/5493515310015?text=Hola%20Metal%20Marketing%2C%20quiero%20mejorar%20el%20marketing%20de%20mi%20negocio.%20%C2%BFPodemos%20hablar%3F" target="_blank" class="btn btn-primary">
+          <span class="icon">💬</span>
+          <span>Hablemos por WhatsApp</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <p>© 2025 Metal Marketing. Todos los derechos reservados.</p>
+      <p class="footer-tagline">Hecho con enfoque en resultados: clientes reales, no seguidores.</p>
+      <div class="footer-socials">
+        <a href="https://www.instagram.com/metalmarketing.agencia/" target="_blank" aria-label="Instagram">📸</a>
+        <a href="https://www.facebook.com/metalmarketingagencia/" target="_blank" aria-label="Facebook">📘</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WHATSAPP FLOAT -->
+  <a href="https://wa.me/5493515310015?text=Hola%20Metal%20Marketing%2C%20quiero%20mejorar%20el%20marketing%20de%20mi%20negocio.%20%C2%BFPodemos%20hablar%3F" target="_blank" class="whatsapp-float" aria-label="Contactar por WhatsApp">
+    💬
+  </a>
+
+  <!-- JS -->
+  <script>
+    // Mobile nav
+    const menuToggle = document.getElementById('menuToggle');
+    const navMenu = document.getElementById('navMenu');
+
+    menuToggle.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+    });
+
+    document.querySelectorAll('.nav-menu a[href^="#"]').forEach(link => {
+      link.addEventListener('click', () => {
+        navMenu.classList.remove('active');
+      });
+    });
+
+    // Intersection Observer for fade-in
+    const observer = new IntersectionObserver(
+      entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.15 }
+    );
+
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+    // Testimonial slider
+    const track = document.getElementById('testimonialTrack');
+    const slides = Array.from(track.children);
+    const prevBtn = document.getElementById('prevTestimonial');
+    const nextBtn = document.getElementById('nextTestimonial');
+    const indicator = document.getElementById('testimonialIndicator');
+
+    let currentIndex = 0;
+    const totalSlides = slides.length;
+
+    function updateSlider(index) {
+      currentIndex = (index + totalSlides) % totalSlides;
+      const offset = -currentIndex * 100;
+      track.style.transform = 'translateX(' + offset + '%)';
+      if (indicator) {
+        indicator.textContent = (currentIndex + 1) + ' / ' + totalSlides;
+      }
+    }
+
+    prevBtn.addEventListener('click', () => updateSlider(currentIndex - 1));
+    nextBtn.addEventListener('click', () => updateSlider(currentIndex + 1));
+
+    // Auto-advance testimonials
+    setInterval(() => {
+      updateSlider(currentIndex + 1);
+    }, 8000);
+  </script>
+</body>
+</html>
+
 
 
 
